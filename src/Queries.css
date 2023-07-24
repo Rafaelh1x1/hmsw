@@ -1,0 +1,76 @@
+/* STLYING FOR MOBILE SCREENS */
+@media (max-width: 800px) {
+  .quick-nav {
+    font-family: "Secular One";
+    font-weight: 500;
+    font-size: calc(0.2vw + 1em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    width: 100vw;
+    color: #e0eff2;
+    text-align: center;
+    background-color: rgba(103, 176, 179, 1);
+    padding: 5px;
+  }
+  .open-nav {
+    display: block;
+  }
+  .close-nav {
+    display: none;
+  }
+  .best-seller-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: top;
+    justify-items: center;
+  }
+  .best-sellers-images {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+  /* THIS IS THE STYLING FOR THE ACTUAL IMAGES WITHIN THE GROUP */
+  .best-seller-img {
+    height: auto;
+    width: 40vw;
+    border-radius: 1rem;
+    border: 0.3rem #cf4929 groove;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5rem;
+    color: #e0eff2;
+    padding: 0.5rem;
+    width: 45vw;
+    text-align: center;
+    border: 1rem #cf4929 groove;
+  }
+  .top-banner-img-bold-text {
+    font-family: "Lilita One";
+    font-size: calc(0.5vw + 1em);
+  }
+  /* Styling for top image that states sustainably sourced seafood */
+  .top-banner-img-ss-text {
+    font-family: "Secular One";
+    font-size: calc(0.3vw + 1em);
+  }
+
+  .best-sellers-item-description {
+    font-family: "Secular One";
+    color: #262512;
+    font-weight: 500;
+    font-size: calc(0.15vw + 1em);
+  }
+}
