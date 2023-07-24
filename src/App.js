@@ -14,11 +14,6 @@ function App() {
   const [visibleCLTemple, setVisibleCLTemple] = useState(false);
   const [visibleCLSpark, setVisibleCLSpark] = useState(false);
 
-  const toggleVisible = () => {
-    setVisibleCLTemple(!visibleCLSpark);
-    setVisibleCLSpark(false);
-  };
-
   return (
     <body className="body">
       <TopBanner text="11508 N 56TH STREET, TEMPLE TERRACE, FL 33617 |    813-437-3474"></TopBanner>

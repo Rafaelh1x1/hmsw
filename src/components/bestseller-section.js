@@ -9,7 +9,7 @@ export default function BestSellersSection() {
   return (
     <div>
       <div class="best-sellers-subheading">
-        <p>OUR VERY BEST SELLERS</p>
+        <p>OUR BEST SELLERS</p>
       </div>
       <div className="best-seller-section">
         <BestSellers

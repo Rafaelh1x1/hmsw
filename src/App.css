@@ -126,7 +126,11 @@
   width: auto;
   padding-bottom: 1rem;
 }
-
+.sub-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* This is the styling for all the content under who are we, work with us, contact us and hours + locations this cpuld change */
 
 .content-text {
