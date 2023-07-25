@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactUsSection() {
   return (
-    <div>
+    <div className="container">
       <p> CONTACT US</p>
       <p>
         Send us a message and we’ll get back to you as soon as possible. Looking

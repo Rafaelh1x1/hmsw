@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "./Queries.css";
 import TopBanner from "./components/topBanner";
 import BestSellersSection from "./components/bestseller-section";
 import HoursAndLocations from "./components/hoursandlocations";
-import ChooseLocation from "./components/chooseLocation";
 import MenuSection from "./components/menu-section";
 import AboutUs from "./components/aboutus";
 import CareerSection from "./components/careerssection";

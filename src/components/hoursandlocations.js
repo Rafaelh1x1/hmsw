@@ -2,12 +2,12 @@ import React from "react";
 import ChooseLocation from "./chooseLocation";
 export default function HoursAndLocations() {
   return (
-    <div>
+    <div className="container">
       <p>HOURS & LOCATIONS</p>
       <div>
         <div className="choose-location-container">
-          <ChooseLocation text="Temple Terrace"></ChooseLocation>
-          <ChooseLocation text="Sparkman Wharf"></ChooseLocation>
+          <p className="choose-location">Temple Terrace</p>
+          <p className="choose-location">Sparkman Wharf</p>
         </div>
         <p>11508 N 56th Street, Temple Terrace, FL 33617</p>
         <p>813-437-3474</p>

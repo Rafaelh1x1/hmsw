@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div className="container">
       <p>WHO ARE WE?</p>
       <div>
         <p>
