@@ -8,8 +8,10 @@ export default function MenuSection() {
   const [visibleCLSpark, setVisibleCLSpark] = useState(false);
   return (
     <div>
-      <p className="sub-heading">MENU</p>
+      <p className="sub-heading menu-heading">MENU</p>
       {/* CLick the location in order to change the menu depedning on the store location */}
+      <p className="dine-in-question">Which location will you be dining at?</p>
+
       <div className="choose-location-container">
         <button
           onClick={() =>

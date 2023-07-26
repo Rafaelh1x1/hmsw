@@ -150,7 +150,7 @@
   vertical-align: center;
   font-weight: 600;
   letter-spacing: 1rem;
-  padding-bottom: 1rem;
+
   border-top: 1rem #67b0b3 groove;
   border-bottom: 1rem #67b0b3 groove;
   background-color: #262512;
@@ -202,25 +202,53 @@
   color: #262512;
   font-size: calc(1vw + 1em);
 }
-
-/* .choose-location {
-  font-size: calc(2vw + 1em);
-  padding: 0.5rem;
-  border: 0.5rem #67b0b3 groove;
-  background-color: #cf4929;
-  color: #efebcf;
-} */
-
+/* Sets the style for how the data under the menu subheading should look */
 .choose-location-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5rem;
   padding-bottom: 1rem;
 }
 
+/* Which location will you be dining at  */
+.dine-in-question {
+  font-size: calc(2.5vw + 1em);
+  text-decoration-style: wavy;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  /* border: 0.3rem #cf4929 solid; */
+  /* background-color: #67b0b3; */
+  color: #262512;
+}
+
 /* STYLING FOR MENU ITEM TYPES */
+
+.menu-heading {
+  font-size: calc(5vw + 1em);
+  font-family: "Lilita One";
+  text-align: center;
+  vertical-align: center;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+  border-top: 1rem #67b0b3 groove;
+  border-bottom: 1rem #67b0b3 groove;
+  background-color: #262512;
+  color: #cf4929;
+}
+
+.menu-button {
+  /* font-size: calc(5vw + 1em);
+  font-family: "Lilita One";
+  text-align: center;
+  vertical-align: center;
+  font-weight: 600;
+  letter-spacing: 1rem; */
+}
+
 .menu-item-flex {
   display: flex;
   align-items: center;
@@ -258,6 +286,8 @@
   font-style: oblique;
   color: #67b0b3;
 }
+
+/* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
 .sticky-bar {
   display: flex;
   justify-content: center;

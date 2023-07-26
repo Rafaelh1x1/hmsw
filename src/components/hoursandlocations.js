@@ -1,5 +1,4 @@
 import React from "react";
-import ChooseLocation from "./chooseLocation";
 export default function HoursAndLocations() {
   return (
     <div className="container">
