@@ -208,7 +208,7 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Which location will you be dining at  */
@@ -285,6 +285,53 @@
 .menu-item-price {
   font-style: oblique;
   color: #67b0b3;
+}
+
+/* Styling for the hours and locations section  */
+.hours-locations-heading {
+  font-size: calc(4vw + 1em);
+  font-family: "Lilita One";
+  text-align: center;
+  vertical-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  color: #cf4929;
+}
+.hours-locations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tt-hour-location {
+  font-size: calc(3vw + 1em);
+  width: 65vw;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+  border: 0.5rem #67b0b3 groove;
+  background-color: #cf4929;
+  color: #efebcf;
+}
+
+/* Apart of teh hours and location accordion component fot Temple Terrace */
+.tt-info {
+  display: none;
+}
+
+.sw-hour-location {
+  font-size: calc(2.5vw + 1em);
+  width: 65vw;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+  border: 0.5rem #67b0b3 groove;
+  background-color: #cf4929;
+  color: #efebcf;
+  margin-bottom: 2rem;
 }
 
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
