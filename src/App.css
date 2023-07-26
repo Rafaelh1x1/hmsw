@@ -306,6 +306,10 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  background-image: url("./components/images/best-sellers-background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: round;
 }
 
 .tt-hour-location {
@@ -332,6 +336,52 @@
   background-color: #cf4929;
   color: #efebcf;
   margin-bottom: 2rem;
+}
+
+/* ABOUT US SECTION STYLING */
+.about-us-img {
+  border: 0.5rem #cf4929 groove;
+}
+.about-us-img-container {
+  position: relative;
+}
+.about-us-img-text {
+  font-size: calc(5vw + 1em);
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efebcf;
+}
+
+.about-us-logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Stylinf for formatting of the bottom half of the about us section */
+.about-us-description-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 0.5rem;
+}
+
+.about-us-description-img {
+  margin-left: 1rem;
+}
+
+.about-us-description-text {
+  font-size: calc(0.1vw + 1em);
+  font-family: "Secular One";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
