@@ -14,11 +14,15 @@ function App() {
   return (
     <body className="body">
       <TopBanner text="11508 N 56TH STREET, TEMPLE TERRACE, FL 33617 |    813-437-3474"></TopBanner>
-      <BestSellersSection></BestSellersSection>
-      <MenuSection />
-      <HoursAndLocations />
-      <AboutUs />
-      <CareerSection />
+      <div className="pain">
+        <BestSellersSection></BestSellersSection>
+
+        <MenuSection />
+        <HoursAndLocations />
+
+        <AboutUs />
+        <CareerSection />
+      </div>
       <ContactUsSection />
       <StickyBar></StickyBar>
     </body>

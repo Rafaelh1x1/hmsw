@@ -3,28 +3,9 @@
   padding: 0;
 }
 
-/* Animations */
-@keyframes slide-in-1 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .body {
   font-family: "Lilita One";
-  background-color: #efebcf;
+  background-color: #c9e3e4;
   overflow: hidden;
 }
 
@@ -45,7 +26,7 @@
 }
 .menu-button:hover {
   border: 0.5rem #cf4929 groove;
-  background-color: #67b0b3;
+  background-color: #66b0b3;
   color: #efebcf;
 }
 
@@ -65,22 +46,35 @@
 
 .top-banner-img-container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+}
+
+.top-banner-img {
+  width: 3rem;
+  height: auto;
+}
+
+.top-banner-logo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(102, 176, 179, 0.4);
+  border-radius: 5rem;
 }
 /* CSS STYLINF FOR THE LETTERS OVER THE MAIN BANENR IMAGE  */
-.text-overlay {
+/* .text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5rem;
-  color: #e0eff2;
-  padding: 1rem;
-  width: 45vw;
-  text-align: center;
-  border: 0.5rem #cf4929 groove;
-}
+  /* background-color: rgba(102, 176, 179, 0.5); */
+/* border-radius: 5rem; */
+/* color: #224344; */
+/* padding: 1rem; */
+/* width: 30vw; */
+/* text-align: center; */
+
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
   font-family: "Secular One";
@@ -115,15 +109,16 @@
   color: #e0eff2;
 }
 /* Styling for top image that states half moon seafood co. */
-.top-banner-img-bold-text {
+/* .top-banner-img-bold-text {
   font-family: "Lilita One";
   font-size: calc(3.5vw + 1em);
-}
+} */
 /* Styling for top image that states sustainably sourced seafood */
-.top-banner-img-ss-text {
-  font-family: "Secular One";
-  font-size: calc(1.5vw + 1em);
-}
+/* .top-banner-img-ss-text {
+  font-family: "Montserrat";
+  font-size: calc(1vw + 1em);
+  font-weight: 100;
+} */
 /* THE IMAGE RIGHT UNDER THE TOP HEADER */
 .top-banner-img {
   height: 50vw;
@@ -146,15 +141,14 @@
 .best-sellers-subheading {
   font-size: calc(5vw + 1em);
   font-family: "Lilita One";
+  font-weight: 900;
   text-align: center;
   vertical-align: center;
-  font-weight: 600;
-  letter-spacing: 1rem;
-
-  border-top: 1rem #67b0b3 groove;
-  border-bottom: 1rem #67b0b3 groove;
-  background-color: #262512;
+  letter-spacing: 0.1rem;
   color: #cf4929;
+  backdrop-filter: blur(2px);
+  border-top: 0.5rem #cf4929 solid;
+  border-bottom: 0.5rem #cf4929 solid;
 }
 
 .best-seller-section {
@@ -163,7 +157,14 @@
   justify-content: center;
   gap: 4vw;
   padding: 1rem;
-  background-image: url("./components/images/best-sellers-background.png");
+  /* background-image: url("./components/images/blue-background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat; */
+}
+
+.pain {
+  background-image: url("./components/images/blue-background.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -179,7 +180,7 @@
   height: auto;
   width: 20vw;
   border-radius: 1rem;
-  border: 0.3rem #cf4929 groove;
+  border: 0.5rem #224344 solid;
 }
 
 .best-seller-text {
@@ -187,20 +188,22 @@
 }
 /* Styling for name of best selling items */
 .best-sellers-item-name {
+  font-size: calc(1vw + 1em);
+  font-family: "Montserrat";
+  font-weight: 700;
   color: #262512;
-  font-size: calc(1.5vw + 1em);
 }
 /* Styling for teh description of best selling items */
 .best-sellers-item-description {
-  font-family: "Secular One";
+  font-family: "Montserrat";
   color: #262512;
-  font-weight: 500;
-  font-size: calc(0.2vw + 1em);
+  font-weight: 600;
+  font-size: calc(0.1vw + 1em);
 }
 /* Styling for the price of the best selling items */
 .best-sellers-item-price {
   color: #262512;
-  font-size: calc(1vw + 1em);
+  font-size: calc(0.5vw + 1em);
 }
 /* Sets the style for how the data under the menu subheading should look */
 .choose-location-container {
@@ -213,15 +216,16 @@
 
 /* Which location will you be dining at  */
 .dine-in-question {
-  font-size: calc(2.5vw + 1em);
-  text-decoration-style: wavy;
+  font-size: calc(1.5vw + 1em);
+  font-family: "Montserrat";
+  font-weight: 600;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   /* border: 0.3rem #cf4929 solid; */
   /* background-color: #67b0b3; */
-  color: #262512;
+  color: #224344;
 }
 
 /* STYLING FOR MENU ITEM TYPES */
@@ -234,10 +238,10 @@
   font-weight: 600;
   letter-spacing: 1rem;
   margin-bottom: 2rem;
-  border-top: 1rem #67b0b3 groove;
-  border-bottom: 1rem #67b0b3 groove;
-  background-color: #262512;
   color: #cf4929;
+  backdrop-filter: blur(2px);
+  border-top: 0.5rem #cf4929 solid;
+  border-bottom: 0.5rem #cf4929 solid;
 }
 
 .menu-button {
@@ -254,11 +258,11 @@
   align-items: center;
   justify-content: center;
   gap: 1vw;
-  background-color: #efebcf;
 }
 .menu-item-type {
   font-weight: 500;
   color: #cf4929;
+  text-decoration: underline;
 }
 
 .menu-item-img {
@@ -306,10 +310,10 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-image: url("./components/images/best-sellers-background.png");
+  /* background-image: url("./components/images/blue-background.png");
   background-size: contain;
   background-position: center;
-  background-repeat: round;
+  background-repeat: round; */
 }
 
 .tt-hour-location {
@@ -340,7 +344,7 @@
 
 /* ABOUT US SECTION STYLING */
 .about-us-img {
-  border: 0.5rem #cf4929 groove;
+  border: 0.5rem #67b0b3 groove;
 }
 .about-us-img-container {
   position: relative;
@@ -348,18 +352,18 @@
 .about-us-img-text {
   font-size: calc(5vw + 1em);
   letter-spacing: 0.5rem;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: #efebcf;
+  transform: translate(-50%, -50%); */
+  color: #224344;
 }
 
 .about-us-logo {
-  position: absolute;
+  /* position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 /* Stylinf for formatting of the bottom half of the about us section */
 .about-us-description-container {
@@ -375,7 +379,8 @@
 
 .about-us-description-text {
   font-size: calc(0.1vw + 1em);
-  font-family: "Secular One";
+  font-family: "Montserrat";
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,13 +388,13 @@
   gap: 3vw;
   margin-right: 1rem;
   margin-left: 1rem;
+  color: #224344;
 }
 
 /* Careers section Styling  */
 
 /* defines the space of the enitre careers section */
 .careers-section {
-  background-color: #c9e3e4;
   padding-bottom: 5rem;
 }
 
@@ -417,16 +422,18 @@
   align-items: center;
   justify-content: center;
 
-  gap: 8rem;
+  gap: 2rem;
 }
 .careers-description-text {
-  font-size: calc(1vw + 1em);
-  padding-top: 3rem;
-  color: #67b0b3;
+  font-size: calc(0.4vw + 1em);
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 03rem;
+  color: #224344;
 }
 
 .apply-now-btn {
-  font-size: calc(2vw + 1em);
+  font-size: calc(1.5vw + 1em);
   letter-spacing: 0.5rem;
   width: 20vw;
   background-color: #224344;
@@ -446,6 +453,7 @@
 }
 
 .contact-us-banner-img {
+  border-top: 0.5rem #cf4929 solid;
 }
 
 .contact-us-banner-text {
@@ -463,6 +471,7 @@
 
 .contact-us-description-text {
   font-size: calc(0.5vw + 1em);
+  font-family: "Montserrat";
 
   padding: 3rem;
   color: #cf4929;
@@ -472,6 +481,7 @@
 
 .contact-us-description {
   font-size: calc(1vw + 1em);
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -513,8 +523,8 @@
 
 #contact-us-submit {
   font-size: calc(2vw + 1em);
-  font-family: "Lilita One";
-  font-weight: 200;
+  font-family: "Montserrat";
+  font-weight: 700;
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;

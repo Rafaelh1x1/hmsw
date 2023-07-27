@@ -4,13 +4,13 @@ export default function AboutUs() {
   return (
     <div className="container">
       <div className="about-us-img-container">
-        <img
+        {/* <img
           src={require("./images/half-moon-bay.jpg")}
           alt=" Half Moon Bay"
           width="100%vw"
           height="auto"
           className="about-us-img"
-        />
+        /> */}
         <img
           src={require("./images/Main_Logo.png")}
           alt="half moon pelican logo"

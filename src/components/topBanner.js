@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import QuickNav from "./QuickNav";
-import topviewfood from "./images/topviewfood2.jpg";
 
 function TopBanner(props) {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -68,15 +67,24 @@ function TopBanner(props) {
 
       <div className="top-banner-img-container">
         <img
-          src={topviewfood}
-          alt="top view of food"
+          src={require("./images/map-background7.jpg")}
+          alt="map of half moon bay "
+          width="100%vw"
+          height="auto"
           className="top-banner-img"
         />
-        <div className="text-overlay">
+        {/* <div className="text-overlay">
           <p className="top-banner-img-bold-text">HALF MOON</p>
           <p className="top-banner-img-bold-text">Seafood Co.</p>
           <p className="top-banner-img-ss-text">Sustainably Sourced seafood</p>
-        </div>
+        </div> */}
+        <img
+          src={require("./images/Main_Logo.png")}
+          alt="half moon pelican logo"
+          width="150vw"
+          height="auto"
+          className="top-banner-logo"
+        />
       </div>
     </div>
   );
