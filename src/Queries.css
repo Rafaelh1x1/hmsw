@@ -22,6 +22,19 @@
   .close-nav {
     display: none;
   }
+
+  /* Make Logo Smaller for Mobile */
+
+  .top-banner-logo {
+    width: 15vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(102, 176, 179, 0.4);
+    border-radius: 5rem;
+  }
+
   .best-seller-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
