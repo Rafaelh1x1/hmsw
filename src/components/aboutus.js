@@ -18,7 +18,7 @@ export default function AboutUs() {
           height="auto"
           className="about-us-logo"
         />
-        <p className="about-us-img-text">HALF MOON FULL BELLY</p>
+        <p className="about-us-img-text">WHO WE ARE</p>
       </div>
       <div className="about-us-description-container">
         <img

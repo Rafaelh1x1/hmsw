@@ -21,7 +21,7 @@
   font-size: calc(2vw + 1em);
   padding: 0.5rem;
   border: 0.5rem #67b0b3 groove;
-  background-color: #cf4929;
+  background-color: #224344;
   color: #efebcf;
 }
 .menu-button:hover {
@@ -39,9 +39,11 @@
   font-size: calc(0.4vw + 1em);
   text-align: center;
   vertical-align: middle;
-  background-color: #262512;
-  color: #e0eff2;
   padding: 1.5rem;
+  color: #efebcf;
+  background-color: #497f81;
+  border-top: 0.5rem #efebcf solid;
+  border-bottom: 0.5rem #efebcf solid;
 }
 
 .top-banner-img-container {
@@ -144,11 +146,11 @@
   font-weight: 900;
   text-align: center;
   vertical-align: center;
-  letter-spacing: 0.1rem;
-  color: #cf4929;
-  backdrop-filter: blur(2px);
-  border-top: 0.5rem #cf4929 solid;
-  border-bottom: 0.5rem #cf4929 solid;
+  letter-spacing: 0.5rem;
+  color: #efebcf;
+  background-color: #67b0b3;
+  border-top: 0.5rem #efebcf solid;
+  border-bottom: 0.5rem #efebcf solid;
 }
 
 .best-seller-section {
@@ -180,7 +182,7 @@
   height: auto;
   width: 20vw;
   border-radius: 1rem;
-  border: 0.5rem #224344 solid;
+  border: 0.5rem #67b0b3 solid;
 }
 
 .best-seller-text {
@@ -238,10 +240,10 @@
   font-weight: 600;
   letter-spacing: 1rem;
   margin-bottom: 2rem;
-  color: #cf4929;
-  backdrop-filter: blur(2px);
-  border-top: 0.5rem #cf4929 solid;
-  border-bottom: 0.5rem #cf4929 solid;
+  color: #efebcf;
+  background-color: #67b0b3;
+  border-top: 0.5rem #efebcf solid;
+  border-bottom: 0.5rem #efebcf solid;
 }
 
 .menu-button {
@@ -301,8 +303,10 @@
   letter-spacing: 0.5rem;
   margin-top: 10rem;
   margin-bottom: 2rem;
-  text-decoration: underline;
-  color: #cf4929;
+  color: #efebcf;
+  background-color: #67b0b3;
+  border-top: 0.5rem #efebcf solid;
+  border-bottom: 0.5rem #efebcf solid;
 }
 .hours-locations-container {
   display: flex;
@@ -322,7 +326,7 @@
   letter-spacing: 0.2rem;
   padding: 0.5rem;
   border: 0.5rem #67b0b3 groove;
-  background-color: #cf4929;
+  background-color: #224344;
   color: #efebcf;
 }
 
@@ -337,7 +341,7 @@
   letter-spacing: 0.2rem;
   padding: 0.5rem;
   border: 0.5rem #67b0b3 groove;
-  background-color: #cf4929;
+  background-color: #224344;
   color: #efebcf;
   margin-bottom: 2rem;
 }
@@ -356,7 +360,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  color: #224344;
+  color: #efebcf;
+  background-color: #67b0b3;
+  border-top: 0.5rem #efebcf solid;
+  border-bottom: 0.5rem #efebcf solid;
 }
 
 .about-us-logo {
