@@ -76,10 +76,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5rem;
   color: #e0eff2;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 45vw;
   text-align: center;
-  border: 1rem #cf4929 groove;
+  border: 0.5rem #cf4929 groove;
 }
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
@@ -435,6 +435,93 @@
   border: 0.5rem #67b0b3 groove;
 }
 
+/* CONTACT US SECTION  */
+
+.contact-us-section {
+  background-color: #262512;
+}
+
+.contact-us-banner {
+  position: relative;
+}
+
+.contact-us-banner-img {
+}
+
+.contact-us-banner-text {
+  font-size: calc(5vw + 1em);
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.7rem;
+  color: #cf4929;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5rem;
+}
+
+.contact-us-description-text {
+  font-size: calc(0.5vw + 1em);
+
+  padding: 3rem;
+  color: #cf4929;
+
+  border-radius: 5rem;
+}
+
+.contact-us-description {
+  font-size: calc(1vw + 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  color: #efebcf;
+}
+
+#conatct-us-name {
+  width: 30rem;
+  height: 2rem;
+  color: #efebcf;
+  background-color: #262512;
+  border: 0.2rem #67b0b3 solid;
+}
+
+#contact-us-email {
+  width: 30rem;
+  height: 2rem;
+  color: #efebcf;
+  background-color: #262512;
+  border: 0.2rem #67b0b3 solid;
+}
+
+#contact-us-phone {
+  width: 30rem;
+  height: 2rem;
+  color: #efebcf;
+  background-color: #262512;
+  border: 0.2rem #67b0b3 solid;
+}
+
+#contact-us-reason {
+  width: 30rem;
+  height: 10rem;
+  color: #efebcf;
+  background-color: #262512;
+  border: 0.2rem #67b0b3 solid;
+}
+
+#contact-us-submit {
+  font-size: calc(2vw + 1em);
+  font-family: "Lilita One";
+  font-weight: 200;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #efebcf;
+  background-color: #262512;
+  border: 0.4rem #cf4929 solid;
+}
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
 
 .sticky-bar {
