@@ -5,9 +5,9 @@ export default function HoursAndLocations() {
       <p className="hours-locations-heading">HOURS & LOCATIONS</p>
       <div>
         <div className="hours-locations-container">
-          <div className="tt-accordion">
-            <p className="tt-hour-location">Temple Terrace</p>
-            <div className="tt-info">
+          <div className="sw-accordion">
+            <p className="sw-hour-location">Sparkman Wharf</p>
+            <div className="sw-info">
               <p>11508 N 56th Street, Temple Terrace, FL 33617</p>
               <p>813-437-3474</p>
               <p>info@halfmoonseafood.com</p>
@@ -16,7 +16,6 @@ export default function HoursAndLocations() {
               <p>Tuesday - Saturday - 11 am - 9 pm</p>
             </div>
           </div>
-          <p className="sw-hour-location">Sparkman Wharf</p>
         </div>
       </div>
     </div>
