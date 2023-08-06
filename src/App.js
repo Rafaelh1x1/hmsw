@@ -6,7 +6,6 @@ import BestSellersSection from "./components/bestseller-section";
 import HoursAndLocations from "./components/hoursandlocations";
 import MenuSection from "./components/menu-section";
 import AboutUs from "./components/aboutus";
-import CareerSection from "./components/careerssection";
 import ContactUsSection from "./components/contacussection";
 import StickyBar from "./components/stickyBar";
 
@@ -16,12 +15,9 @@ function App() {
       <TopBanner text="11508 N 56TH STREET, TEMPLE TERRACE, FL 33617 |    813-437-3474"></TopBanner>
       <div className="pain">
         <BestSellersSection></BestSellersSection>
-
         <MenuSection />
         <HoursAndLocations />
-
         <AboutUs />
-        <CareerSection />
       </div>
       <ContactUsSection />
       <StickyBar></StickyBar>
