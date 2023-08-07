@@ -318,40 +318,39 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
 }
+/* THIS SETS THE ORIENTATION OF THE MAPS AND THE INFO IN THE HOURS AND LCOATION SECTION */
+.hours-location-maps-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours-locations-map {
+  border: 0.5rem #67b0b3 solid;
+  margin-left: 0.5rem;
+}
+/* STYLING FOR JUST THE TEXT */
 .hours-locations-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
 }
 
-.tt-hour-location {
-  font-size: calc(3vw + 1em);
-  width: 65vw;
+.sw-info-title {
+  font-size: calc(2vw + 1em);
   letter-spacing: 0.2rem;
-  padding: 0.5rem;
-  border: 0.5rem #67b0b3 groove;
-  background-color: #224344;
-  color: #efebcf;
+  color: #224344;
+  margin-top: 2rem;
 }
-
-/* Apart of teh hours and location accordion component fot Temple Terrace */
-.tt-info {
-  display: none;
+.sw-info-title:first-child {
+  margin-top: 0;
 }
-
-.sw-hour-location {
-  font-size: calc(2.5vw + 1em);
-  width: 65vw;
-  letter-spacing: 0.2rem;
-  padding: 0.5rem;
-  border: 0.5rem #67b0b3 groove;
-  background-color: #224344;
-  color: #efebcf;
-  margin-bottom: 2rem;
+.sw-info-text {
+  font-size: calc(0.1vw + 1em);
+  color: #224344;
 }
-
 /* ABOUT US SECTION STYLING */
 .about-us-img {
   border: 0.5rem #67b0b3 groove;

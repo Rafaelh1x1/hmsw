@@ -54,6 +54,17 @@
     border-radius: 1rem;
   }
 }
+/* HOUR AND LOCATION SECTION */
+.hours-location-maps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sw-info-title:first-child {
+  margin-top: 1rem;
+}
 
 /* About Us section */
 .about-us-description-container {
@@ -68,6 +79,13 @@
 
 .about-us-description-img {
   margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  .hours-locations-map {
+    height: 100vw;
+    width: 100vw;
+  }
 }
 
 @media (max-width: 400px) {
