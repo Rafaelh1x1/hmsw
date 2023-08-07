@@ -44,6 +44,10 @@
   background-color: #497f81;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  text-transform: uppercase;
+}
+.a {
+  text-decoration: none;
 }
 
 .top-banner-img-container {
@@ -235,20 +239,6 @@
   margin-bottom: 2rem;
 }
 
-/* Which location will you be dining at  */
-.dine-in-question {
-  font-size: calc(1.5vw + 1em);
-  font-family: "Montserrat";
-  font-weight: 600;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  /* border: 0.3rem #cf4929 solid; */
-  /* background-color: #67b0b3; */
-  color: #224344;
-}
-
 /* STYLING FOR MENU ITEM TYPES */
 
 .menu-heading {
@@ -276,11 +266,12 @@
   color: #cf4929;
   text-decoration: underline;
 }
-
+/* CONTROLS STYLIGN FOR IMAGE DISPLAYED IN MENU SECTION */
 .menu-item-img {
   height: auto;
   width: calc(40vw + 1em);
-  padding-left: 2rem;
+  margin-left: 2rem;
+  border: 0.5rem #67b0b3 solid;
 }
 .menu-type-container {
   display: grid;
@@ -338,6 +329,16 @@
   flex-direction: column;
 }
 
+.sw-hour-location {
+  font-size: calc(2.5vw + 1em);
+  width: 65vw;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+  border: 0.5rem #67b0b3 groove;
+  background-color: #224344;
+  color: #efebcf;
+  margin-bottom: 2rem;
+}
 .sw-info-title {
   font-size: calc(2vw + 1em);
   letter-spacing: 0.2rem;
@@ -371,12 +372,6 @@
   border-bottom: 0.5rem #efebcf solid;
 }
 
-.about-us-logo {
-  /* position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-}
 /* Stylinf for formatting of the bottom half of the about us section */
 .about-us-description-container {
   display: grid;

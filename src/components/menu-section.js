@@ -17,10 +17,14 @@ export default function MenuSection() {
         {/* this is where all the images for the various items will be */}
         <div className="menu-type-container">
           <div>
-            <MenuItemImg imageAlt="Fish and chips"></MenuItemImg>
+            <img
+              src={require("./images/FishNChips.jpg")}
+              alt="Fish and Chips"
+              className="menu-item-img"
+            />
           </div>
           {/* this is where all the types of menu item go */}
-          <div>
+          <div className="menu-type-container">
             <MenuItemType type="Plates"></MenuItemType>
 
             {/* this is where all the actual menu items go  */}
@@ -48,6 +52,13 @@ export default function MenuSection() {
               itemPrice="16"
             ></MenuItem>
           </div>
+          <a
+            href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
+            className="a"
+          >
+            {" "}
+            <p>Click here for pdf</p>
+          </a>
         </div>
       </div>
     </div>

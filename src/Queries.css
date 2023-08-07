@@ -53,32 +53,45 @@
     width: 40vw;
     border-radius: 1rem;
   }
-}
-/* HOUR AND LOCATION SECTION */
-.hours-location-maps-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.sw-info-title:first-child {
-  margin-top: 1rem;
-}
+  /* MENU SECTION */
+  .menu-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
 
-/* About Us section */
-.about-us-description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  gap: 2rem;
-}
+  .menu-item-img {
+    height: auto;
+    width: 100vw;
+    margin-left: 0;
+  }
 
-.about-us-description-img {
-  margin-left: 0;
+  /* HOUR AND LOCATION SECTION */
+  .hours-location-maps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sw-info-title:first-child {
+    margin-top: 1rem;
+  }
+
+  /* About Us section */
+  .about-us-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 600px) {

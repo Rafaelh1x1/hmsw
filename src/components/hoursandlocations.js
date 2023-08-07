@@ -18,12 +18,10 @@ export default function HoursAndLocations() {
         </div>
         <div className="hours-locations-container">
           <p className="sw-info-title">ADDRESS</p>
-          <p className="sw-info-text">
-            11508 N 56th Street, Temple Terrace, FL 33617
-          </p>
+          <p className="sw-info-text">615 Channelside Dr, Tampa, FL 33602</p>
           <p className="sw-info-title">HOURS</p>
-          <p className="sw-info-text">Tuesday - Saturday - 11 am - 9 pm</p>
-          <p className="sw-info-text">Tuesday - Saturday - 11 am - 9 pm</p>
+          <p className="sw-info-text">Sunday-Thursday | 11 am - 9 pm</p>
+          <p className="sw-info-text">Friday-Saturday | 11 am - 11 pm</p>
           <p className="sw-info-title">HOW TO REACH US</p>
           <p className="sw-info-text">813-437-3474</p>
           <p className="sw-info-text">info@halfmoonseafood.com</p>
