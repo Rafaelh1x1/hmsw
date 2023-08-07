@@ -1,6 +1,6 @@
 import React from "react";
 import MenuItemSubheading from "./menuItemSubheading";
-import { MenuItemImg, MenuItemType, MenuItem } from "./menuItems";
+import { MenuItemType, MenuItem } from "./menuItems";
 
 export default function MenuSection() {
   return (
