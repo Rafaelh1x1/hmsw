@@ -159,52 +159,71 @@
   justify-content: center;
   gap: 4vw;
   padding: 1rem;
-  /* background-image: url("./components/images/blue-background.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat; */
 }
-
+/* THIS IS FOR THE BACKGROUND OF TEH SECTIONS BEST-SELLER THROUGH ABOUT US */
 .pain {
   background-image: url("./components/images/blue-background.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
 }
-/* THIS IS THE STYLING FOR THE GROUP OF IMAGES */
-.best-sellers-images {
+.best-seller-card {
   display: flex;
   flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+/* THIS IS THE STYLING FOR EACH IMAGE AND THE OVERLAYING TEXT */
+.best-sellers-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 20vw;
+  position: relative;
 }
 /* THIS IS THE STYLING FOR THE ACTUAL IMAGES WITHIN THE GROUP */
 .best-seller-img {
   height: auto;
   width: 20vw;
   border-radius: 1rem;
-  border: 0.5rem #67b0b3 solid;
+  border: 0.4rem #67b0b3 solid;
 }
 
 .best-seller-text {
-  font-family: "Lilita One";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* Styling for name of best selling items */
 .best-sellers-item-name {
-  font-size: calc(1vw + 1em);
-  font-family: "Montserrat";
+  font-size: calc(2vw + 1em);
+  font-family: "Lilita One";
   font-weight: 700;
-  color: #262512;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #efebcf;
+  background-color: rgba(103, 176, 179, 0.5);
+  text-align: center;
+  border-top: 0.3rem #67b0b3 solid;
+  border-bottom: 0.3rem #67b0b3 solid;
 }
 /* Styling for teh description of best selling items */
 .best-sellers-item-description {
-  font-family: "Montserrat";
-  color: #262512;
-  font-weight: 600;
-  font-size: calc(0.1vw + 1em);
+  font-size: calc(0.05vw + 1em);
+  font-family: "Lilita One";
+  font-weight: 500;
+  color: #224344;
 }
 /* Styling for the price of the best selling items */
 .best-sellers-item-price {
-  color: #262512;
+  color: #224344;
   font-size: calc(0.5vw + 1em);
 }
 /* Sets the style for how the data under the menu subheading should look */
@@ -244,15 +263,6 @@
   background-color: #67b0b3;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
-}
-
-.menu-button {
-  /* font-size: calc(5vw + 1em);
-  font-family: "Lilita One";
-  text-align: center;
-  vertical-align: center;
-  font-weight: 600;
-  letter-spacing: 1rem; */
 }
 
 .menu-item-flex {
@@ -314,10 +324,6 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  /* background-image: url("./components/images/blue-background.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: round; */
 }
 
 .tt-hour-location {
@@ -396,57 +402,6 @@
   margin-right: 1rem;
   margin-left: 1rem;
   color: #224344;
-}
-
-/* Careers section Styling  */
-
-/* defines the space of the enitre careers section */
-.careers-section {
-  padding-bottom: 5rem;
-}
-
-.careers-img-container {
-  position: relative;
-  margin-bottom: 2rem;
-}
-.careers-banner-text {
-  font-size: calc(5vw + 1em);
-  letter-spacing: 0.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #cf4929;
-}
-
-.careers-banner-img {
-  border: 0.5rem #67b0b3 groove;
-}
-
-.careers-description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 2rem;
-}
-.careers-description-text {
-  font-size: calc(0.4vw + 1em);
-  font-family: "Montserrat";
-  font-weight: 600;
-  padding: 03rem;
-  color: #224344;
-}
-
-.apply-now-btn {
-  font-size: calc(1.5vw + 1em);
-  letter-spacing: 0.5rem;
-  width: 20vw;
-  background-color: #224344;
-  color: #e4f1f1;
-  cursor: pointer;
-  border: 0.5rem #67b0b3 groove;
 }
 
 /* CONTACT US SECTION  */

@@ -15,29 +15,29 @@ export default function BestSellersSection() {
         <BestSellers
           imageSrc={CrabCakeSand}
           imageAlt="Crab Cake Sandwich"
-          text="Crab Cake Sandwich"
-          description="Hand-made Crunchy Crab Cake"
+          text="CRAB CAKE SANDWICH"
+          description="House jumbo lump crab mix, lettuce, onions, and tartar sauce on a toasted brioche bun."
           price="$16"
         ></BestSellers>
         <BestSellers
           imageSrc={FishNChips}
           imageAlt="Fish and Chips"
-          text="Fish N Chips"
-          description="Savory grilled fish with in house spice blend"
+          text="FISH & CHIPS"
+          description="1/2 lb of your choice of fish, served with tartar sauce and shoestring fries."
           price="$15"
         ></BestSellers>
         <BestSellers
           imageSrc={FishNShrimp}
-          imageAlt="Fish N Shrimp"
-          text="Fish and Shrimp"
-          description=" Savory and refreshing combo"
+          imageAlt="SHRIMP and FISH"
+          text="SHRIMP & FISH"
+          description="Your choice of fish, shrimp and a side. Served with house tartar and cocktail sauce."
           price="$19"
         ></BestSellers>
         <BestSellers
           imageSrc={HotTossChik}
           imageAlt="Hot Tossed Chicken with Collard Greens"
-          text="Nashville Hot Toss Chicken "
-          description="Hot, spicy, sweet chicken"
+          text="HOT TOSSED CHICKEN "
+          description="Brined and fried chicken bites, tossed in Nashville Hot sauce"
           price="$13"
         ></BestSellers>
       </div>
