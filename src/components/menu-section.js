@@ -164,6 +164,7 @@ const menuItems = [
 ];
 
 export default function MenuSection() {
+  // filtering the list into all teh diffrent menu item types
   const sandwichMenuItems = menuItems.filter((item) => item.category === "1");
   const heatMenuItems = menuItems.filter((item) => item.category === "2");
   const bsMenuItems = menuItems.filter((item) => item.category === "3");
@@ -180,6 +181,7 @@ export default function MenuSection() {
 
       <div className="menu-sparkman">
         <div class="menu-item-flex">
+          {/* Setting functionality */}
           <p class="menu-item-type" onClick={() => setMenuType(1)}>
             SANDWICHES
           </p>
@@ -203,9 +205,18 @@ export default function MenuSection() {
           </p>
         </div>
 
+        {/* conditional rendering to show specific menu item types */}
+
+        {menuType === 0 ? (
+          <div className="menu-choose">
+            <p>CHOOSE ONE OF THE ABOVE TO GET STARTED!</p>
+          </div>
+        ) : (
+          ""
+        )}
+
         {menuType === 1 ? (
-          <p className="menu-sandwich">
-            <p>SANDWICH</p>
+          <div className="menu-sandwich">
             {sandwichMenuItems.map((menuItems) => (
               <div key={sandwichMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -214,13 +225,12 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
         {menuType === 2 ? (
-          <p className="menu-heat">
-            <p>HALF MOON HEAT</p>
+          <div className="menu-heat">
             {heatMenuItems.map((menuItems) => (
               <div key={heatMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -229,14 +239,13 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
 
         {menuType === 3 ? (
-          <p className="menu-bs">
-            <p>BASKETS & SALADS</p>
+          <div className="menu-bs">
             {bsMenuItems.map((menuItems) => (
               <div key={bsMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -245,14 +254,13 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
 
         {menuType === 4 ? (
-          <p className="menu-sides">
-            <p>BASKETS & SALADS</p>
+          <div className="menu-sides">
             {sidesMenuItems.map((menuItems) => (
               <div key={sidesMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -261,14 +269,13 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
 
         {menuType === 5 ? (
-          <p className="menu-sweets">
-            <p>BASKETS & SALADS</p>
+          <div className="menu-sweets">
             {sweetsMenuItems.map((menuItems) => (
               <div key={sweetsMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -277,14 +284,13 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
 
         {menuType === 6 ? (
-          <p className="menu-kids">
-            <p>BASKETS & SALADS</p>
+          <div className="menu-kids">
             {kidsMenuItems.map((menuItems) => (
               <div key={kidsMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -293,14 +299,13 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
 
         {menuType === 7 ? (
-          <p className="menu-sauces">
-            <p>BASKETS & SALADS</p>
+          <div className="menu-sauces">
             {saucesMenuItems.map((menuItems) => (
               <div key={saucesMenuItems.id}>
                 <p className="menu-item-name">{menuItems.name}</p>
@@ -309,17 +314,17 @@ export default function MenuSection() {
                 <p className="menu-item-price">{menuItems.price}</p>
               </div>
             ))}
-          </p>
+          </div>
         ) : (
           ""
         )}
+        <a
+          href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
+          className="a"
+        >
+          <p>Click here to view the entire menu</p>
+        </a>
       </div>
-      <a
-        href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
-        className="a"
-      >
-        <p>Click here for pdf</p>
-      </a>
     </div>
   );
 }

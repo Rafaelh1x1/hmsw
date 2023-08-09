@@ -254,7 +254,7 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
 }
-
+/* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
 .menu-item-flex {
   display: flex;
   align-items: center;
@@ -267,18 +267,8 @@
   color: #cf4929;
   text-decoration: underline;
 }
-/* CONTROLS STYLIGN FOR IMAGE DISPLAYED IN MENU SECTION */
-.menu-item-img {
-  height: auto;
-  width: calc(40vw + 1em);
-  margin-left: 2rem;
-  border: 0.5rem #67b0b3 solid;
-}
-.menu-type-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding-top: 2rem;
+.menu-sparkman {
+  text-align: center;
 }
 .menu-item-types {
   font-size: calc(2.5vw + 1em);
