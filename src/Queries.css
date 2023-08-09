@@ -55,6 +55,21 @@
   }
 
   /* MENU SECTION */
+
+  .menu-item-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1.5vw;
+    cursor: pointer;
+  }
+  .menu-item-type {
+    font-size: calc(1vw + 1em);
+  }
+
   .menu-type-container {
     display: flex;
     flex-direction: column;
@@ -123,6 +138,10 @@
   .top-banner-img-ss-text {
     font-family: "Secular One";
     font-size: calc(0.3vw + 1em);
+  }
+
+  .top-banner {
+    font-size: calc(0.1vw + 1em);
   }
 
   .best-sellers-item-description {

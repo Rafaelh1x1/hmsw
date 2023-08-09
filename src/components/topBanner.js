@@ -83,13 +83,6 @@ function TopBanner(props) {
           <p className="top-banner-img-bold-text">Seafood Co.</p>
           <p className="top-banner-img-ss-text">Sustainably Sourced seafood</p>
         </div> */}
-        <img
-          src={require("./images/Main_Logo.png")}
-          alt="half moon pelican logo"
-          width="150vw"
-          height="auto"
-          className="top-banner-logo"
-        />
       </div>
     </div>
   );

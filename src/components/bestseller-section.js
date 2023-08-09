@@ -15,7 +15,7 @@ export default function BestSellersSection() {
         <BestSellers
           imageSrc={CrabCakeSand}
           imageAlt="Crab Cake Sandwich"
-          text="CRAB CAKE SANDWICH"
+          text="COASTAL CARB"
           description="House jumbo lump crab mix, lettuce, onions, and tartar sauce on a toasted brioche bun."
           price="$16"
         ></BestSellers>
@@ -36,7 +36,7 @@ export default function BestSellersSection() {
         <BestSellers
           imageSrc={HotTossChik}
           imageAlt="Hot Tossed Chicken with Collard Greens"
-          text="HOT TOSSED CHICKEN "
+          text="NASH HOT TOSS"
           description="Brined and fried chicken bites, tossed in Nashville Hot sauce"
           price="$13"
         ></BestSellers>

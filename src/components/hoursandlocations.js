@@ -17,13 +17,19 @@ export default function HoursAndLocations() {
           ></iframe>
         </div>
         <div className="hours-locations-container">
-          <p className="sw-info-title">ADDRESS</p>
-          <p className="sw-info-text">615 Channelside Dr, Tampa, FL 33602</p>
+          <p className="sw-info-title ">ADDRESS</p>
+          <a
+            href="https://www.google.com/maps/dir/27.4724016,-82.4211016/halfmoon+seafood/@27.7105839,-82.8332828,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88c2c59e23db4b51:0xb139c480f6bf4ee1!2m2!1d-82.4461237!2d27.943512?entry=ttu"
+            className="a"
+          >
+            <p className="sw-info-text sw-info-address">
+              615 Channelside Dr, Tampa, FL 33602
+            </p>
+          </a>
           <p className="sw-info-title">HOURS</p>
           <p className="sw-info-text">Sunday-Thursday | 11 am - 9 pm</p>
           <p className="sw-info-text">Friday-Saturday | 11 am - 11 pm</p>
           <p className="sw-info-title">HOW TO REACH US</p>
-
           <p className="sw-info-text">info@halfmoonseafood.com</p>
         </div>
       </div>

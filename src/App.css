@@ -1,3 +1,14 @@
+/* ANIMATIONS */
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -39,15 +50,23 @@
   font-size: calc(0.4vw + 1em);
   text-align: center;
   vertical-align: middle;
-  padding: 1.5rem;
+  padding: 0.5rem;
   color: #efebcf;
-  background-color: #497f81;
+  margin-top: 0.5rem;
+  background-color: #67b0b3;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   text-transform: uppercase;
 }
+/* Removes the underline from the top banner */
 .a {
   text-decoration: none;
+}
+.top-banner:hover {
+  color: #cf4929;
+  background-color: #224344;
+
+  text-shadow: 0 0 19px #cf4929;
 }
 
 .top-banner-img-container {
@@ -58,6 +77,7 @@
 .top-banner-img {
   width: 3rem;
   height: auto;
+  margin-top: 0.5rem;
 }
 
 .top-banner-logo {
@@ -129,18 +149,6 @@
 .top-banner-img {
   height: 50vw;
   width: auto;
-  padding-bottom: 1rem;
-}
-.sub-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* This is the styling for all the content under who are we, work with us, contact us and hours + locations this cpuld change */
-
-.content-text {
-  text-align: center;
-  padding: 2rem;
 }
 
 /* Specific styling for the Best sellers subheading */
@@ -183,7 +191,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 20vw;
   position: relative;
 }
@@ -204,19 +211,23 @@
 }
 /* Styling for name of best selling items */
 .best-sellers-item-name {
-  font-size: calc(2vw + 1em);
+  font-size: calc(1vw + 1em);
   font-family: "Lilita One";
   font-weight: 700;
+  letter-spacing: 0.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+
   color: #efebcf;
-  background-color: rgba(103, 176, 179, 0.5);
+  background-color: rgba(103, 176, 179, 0.3);
   text-align: center;
+
   border-top: 0.3rem #67b0b3 solid;
   border-bottom: 0.3rem #67b0b3 solid;
+  border: 0.3rem #67b0b3 solid;
 }
 /* Styling for teh description of best selling items */
 .best-sellers-item-description {
@@ -269,7 +280,7 @@
   color: #224344;
 }
 .menu-item-type {
-  font-size: calc(0.3vw + 1em);
+  font-size: calc(0.5vw + 1em);
   font-weight: 500;
   color: #cf4929;
   text-decoration: underline;
@@ -279,16 +290,7 @@
   color: #224344;
   text-shadow: 0 0 19px #cf4929;
 }
-@keyframes popUp {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+
 .menu-sparkman {
   text-align: center;
 }
@@ -299,7 +301,7 @@
 }
 .menu-item-additional {
   font-size: calc(0.3vw + 1em);
-  color: #67b0b3;
+  color: #497f81;
 }
 .menu-item-description {
   font-size: calc(0.5vw + 1em);
@@ -366,7 +368,7 @@
   margin-bottom: 2rem;
 }
 .sw-info-title {
-  font-size: calc(2vw + 1em);
+  font-size: calc(3vw + 1em);
   letter-spacing: 0.2rem;
   color: #224344;
   margin-top: 2rem;
@@ -375,8 +377,14 @@
   margin-top: 0;
 }
 .sw-info-text {
-  font-size: calc(0.1vw + 1em);
+  font-size: calc(0.5vw + 1em);
+  color: #497f81;
+}
+
+/* Styling so that the address highlights */
+.sw-info-address:hover {
   color: #224344;
+  text-shadow: 0 0 19px #cf4929;
 }
 /* ABOUT US SECTION STYLING */
 .about-us-img {
