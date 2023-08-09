@@ -23,7 +23,7 @@ export default function HoursAndLocations() {
           <p className="sw-info-text">Sunday-Thursday | 11 am - 9 pm</p>
           <p className="sw-info-text">Friday-Saturday | 11 am - 11 pm</p>
           <p className="sw-info-title">HOW TO REACH US</p>
-          <p className="sw-info-text">813-437-3474</p>
+
           <p className="sw-info-text">info@halfmoonseafood.com</p>
         </div>
       </div>

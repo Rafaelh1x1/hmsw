@@ -209,7 +209,9 @@ export default function MenuSection() {
 
         {menuType === 0 ? (
           <div className="menu-choose">
-            <p>CHOOSE ONE OF THE ABOVE TO GET STARTED!</p>
+            <p className="choose-type">
+              CHOOSE ONE OF THE ABOVE TO GET STARTED!
+            </p>
           </div>
         ) : (
           ""
@@ -322,7 +324,7 @@ export default function MenuSection() {
           href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
           className="a"
         >
-          <p>Click here to view the entire menu</p>
+          <p className="menu-jpg">Click here to view the entire menu</p>
         </a>
       </div>
     </div>
