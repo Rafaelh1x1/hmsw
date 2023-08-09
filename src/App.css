@@ -260,6 +260,7 @@
   align-items: center;
   justify-content: center;
   gap: 1vw;
+  cursor: pointer;
 }
 .menu-item-type {
   font-weight: 500;

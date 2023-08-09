@@ -1,66 +1,325 @@
-import React from "react";
-import MenuItemSubheading from "./menuItemSubheading";
-import { MenuItemType, MenuItem } from "./menuItems";
+import { useState } from "react";
+
+const menuItems = [
+  {
+    name: "THE ORIGINAL",
+    additional: "Choice of fried, blackened, or grilled",
+    description:
+      "Your choice of fish, dressed with lettuce, tomatoes, and tartar sauce on a toasted brioche bun. ",
+    price: "COD $16 | GROUPER $20",
+    id: "THE ORIGINAL",
+    category: "1",
+  },
+  {
+    name: "SHRIMP PO’ BOY",
+    additional: "Choice of fried, blackened, or grilled",
+    description:
+      "Dressed with lettuce, tomatoes, and cajun remoulade sauce on a fresh, toasted baguette.",
+    price: "$16",
+    id: "SHRIMP PO’ BOY",
+    category: "1",
+  },
+  {
+    name: "COASTAL CRAB",
+    description:
+      "House jumbo lump crab mix, lettuce, red onions, and tartar sauce on a toasted brioche bun.",
+    price: "$19",
+    id: "COASTAL CRAB",
+    category: "1",
+  },
+  {
+    name: "FRIED BIRD",
+    description:
+      "All-natural chicken breast, lettuce, pickles, and Half Moon sauce on a toasted brioche bun.",
+    price: "$15",
+    id: "FRIED BIRD",
+    category: "1",
+  },
+  {
+    name: "NASHVILLE HOT TOSSED",
+    description:
+      "Your choice of protein, hand-battered and tossed in our house Nashville Hot sauce.",
+    price: "SHRIMP $18 | CHICKEN $15 | COD $17 | GROUPER $21",
+    id: "NASHVILLE HOT TOSSED",
+    category: "2",
+  },
+  {
+    name: "NASHVILLE HOT SANDWICH",
+    description:
+      "Your choice of protein, hand-battered and tossed in our house Nashville Hot sauce. Dressed with pickles and coleslaw on a toasted brioche bun.",
+    price: "CHICKEN $15 | COD $16 | GROUPER $20",
+    id: "NASHVILLE HOT SANDWICH",
+    category: "2",
+  },
+  {
+    name: "FISH & CHIPS",
+    additional: "Choice of fried, blackened, or grilled",
+    description: "Your choice of fish, served with tartar sauce.",
+    price: "COD $17 | GROUPER $22",
+    id: "FISH & CHIPS",
+    category: "3",
+  },
+  {
+    name: "LARRY’S CRAB CAKES",
+    description: "3 house crab cakes served with tartar sauce.",
+    price: "$21",
+    id: "LARRY’S CRAB CAKES",
+    category: "3",
+  },
+  {
+    name: "SHRIMP & CHIPS",
+    additional: "Choice of fried, blackened, or grilled",
+    description: "Wild-caught shrimp, served with cocktail sauce.",
+    price: "$18",
+    id: "SHRIMP & CHIPS",
+    category: "3",
+  },
+  {
+    name: "SOUTHWEST SALAD",
+    additional: "Choice of fried, blackened, or grilled",
+    description:
+      "Mixed greens, roasted corn, black beans, bell peppers, red onions, tortilla strips, and queso fresco served with chipotle cilantro ranch",
+    price: "SHRIMP $17 | CHICKEN $15",
+    id: "SOUTHWEST SALAD",
+    category: "3",
+  },
+  {
+    name: "HUSHPUPPIES",
+    price: "$5",
+    id: "HUSHPUPPIES",
+    category: "4",
+  },
+  {
+    name: "SEASONED FRIES",
+    price: "$5",
+    id: "SEASONED FRIES",
+    category: "4",
+  },
+  {
+    name: "HOUSE SLAW",
+    price: "$5",
+    id: "HOUSE SLAW",
+    category: "4",
+  },
+  {
+    name: "SOUTHWEST CORN",
+    price: "$5",
+    id: "SOUTHWEST CORN",
+    category: "4",
+  },
+  {
+    name: "BANANA PUDDING",
+    price: "$6",
+    id: "BANANA PUDDING",
+    category: "5",
+  },
+  {
+    name: "FRIED OREOS",
+    price: "$6",
+    id: "FRIED OREOS",
+    category: "5",
+  },
+  {
+    name: "KID’S FISH BITES & FRIES",
+    price: "$9",
+    id: "KID’S FISH BITES & FRIES",
+    category: "6",
+  },
+  {
+    name: "KID’S CHIX BITES & FRIES",
+    price: "$9",
+    id: "KID’S CHIX BITES & FRIES",
+    category: "6",
+  },
+  {
+    name: "HALF MOON HALF MOON ",
+    id: "HALF MOON ",
+    category: "7",
+  },
+  {
+    name: "TARTAR",
+    id: "TARTAR",
+    category: "7",
+  },
+  {
+    name: "COCKTAIL",
+    id: "COCKTAIL",
+    category: "7",
+  },
+  {
+    name: "CAJUN REMOULADE",
+    id: "CAJUN REMOULADE",
+    category: "7",
+  },
+  {
+    name: "NASHVILLE SWEET HEAT",
+    id: "NASHVILLE SWEET HEAT",
+    category: "7",
+  },
+  {
+    name: "NASHVILLE FULL HEAT",
+    id: "NASHVILLE FULL HEAT",
+    category: "7",
+  },
+];
 
 export default function MenuSection() {
+  const sandwichMenuItems = menuItems.filter((item) => item.category === "1");
+  const heatMenuItems = menuItems.filter((item) => item.category === "2");
+  const bsMenuItems = menuItems.filter((item) => item.category === "3");
+  const sidesMenuItems = menuItems.filter((item) => item.category === "4");
+  const sweetsMenuItems = menuItems.filter((item) => item.category === "5");
+  const kidsMenuItems = menuItems.filter((item) => item.category === "6");
+  const saucesMenuItems = menuItems.filter((item) => item.category === "7");
+
+  const [menuType, setMenuType] = useState(0);
+
   return (
     <div>
-      <p className="sub-heading menu-heading">MENU</p>
-      {/* CLick the location in order to change the menu depedning on the store location */}
+      <p className=" menu-heading">MENU</p>
 
       <div className="menu-sparkman">
-        {/* Click these and they will change the HTML being displaeyd */}
-        <MenuItemSubheading></MenuItemSubheading>
-
-        {/* This is where all the diffrent menu items go */}
-
-        {/* this is where all the images for the various items will be */}
-        <div className="menu-type-container">
-          <div>
-            <img
-              src={require("./images/FishNChips.jpg")}
-              alt="Fish and Chips"
-              className="menu-item-img"
-            />
-          </div>
-          {/* this is where all the types of menu item go */}
-          <div className="menu-type-container">
-            <MenuItemType type="Plates"></MenuItemType>
-
-            {/* this is where all the actual menu items go  */}
-            <MenuItem
-              itemName="FISH & CHIPS"
-              itemDescription="1/2 lb of your choice of fish, served with tartar sauce and shoestring fries."
-              itemPrice=" Cod 15 | Gulf Grouper per market Price | Mississippi Catfish 16"
-            ></MenuItem>
-
-            <MenuItem
-              itemName="SHRIMP & FISH"
-              itemDescription="Your choice of fish, shrimp and a side. Served with house tartar and cocktail sauce."
-              itemPrice="Cod 19 | Gulf Grouper per Market Price | Mississippi Catfish 20"
-            ></MenuItem>
-
-            <MenuItem
-              itemName="SAMPLE THE SEA"
-              itemDescription="Try it all! Lightly battered shrimp, fish, and your choice of oysters or a house-made crab cake. Served with two sides."
-              itemPrice="Cod 28 | Gulf Grouper per Market Price | Mississippi Catfish 29"
-            ></MenuItem>
-
-            <MenuItem
-              itemName="SHRIMP & CHIPS"
-              itemDescription="1/2 lb of wild-caught shrimp, served with house cocktail sauce and a side."
-              itemPrice="16"
-            ></MenuItem>
-          </div>
-          <a
-            href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
-            className="a"
-          >
-            {" "}
-            <p>Click here for pdf</p>
-          </a>
+        <div class="menu-item-flex">
+          <p class="menu-item-type" onClick={() => setMenuType(1)}>
+            SANDWICHES
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(2)}>
+            HALF MOON HEAT
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(3)}>
+            BASKETS & SALADS
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(4)}>
+            SIDES
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(5)}>
+            SWEETS
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(6)}>
+            KIDS
+          </p>
+          <p class="menu-item-type" onClick={() => setMenuType(7)}>
+            SAUCES
+          </p>
         </div>
+
+        {menuType === 1 ? (
+          <p className="menu-sandwich">
+            <p>SANDWICH</p>
+            {sandwichMenuItems.map((menuItems) => (
+              <div key={sandwichMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+        {menuType === 2 ? (
+          <p className="menu-heat">
+            <p>HALF MOON HEAT</p>
+            {heatMenuItems.map((menuItems) => (
+              <div key={heatMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+
+        {menuType === 3 ? (
+          <p className="menu-bs">
+            <p>BASKETS & SALADS</p>
+            {bsMenuItems.map((menuItems) => (
+              <div key={bsMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+
+        {menuType === 4 ? (
+          <p className="menu-sides">
+            <p>BASKETS & SALADS</p>
+            {sidesMenuItems.map((menuItems) => (
+              <div key={sidesMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+
+        {menuType === 5 ? (
+          <p className="menu-sweets">
+            <p>BASKETS & SALADS</p>
+            {sweetsMenuItems.map((menuItems) => (
+              <div key={sweetsMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+
+        {menuType === 6 ? (
+          <p className="menu-kids">
+            <p>BASKETS & SALADS</p>
+            {kidsMenuItems.map((menuItems) => (
+              <div key={kidsMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
+
+        {menuType === 7 ? (
+          <p className="menu-sauces">
+            <p>BASKETS & SALADS</p>
+            {saucesMenuItems.map((menuItems) => (
+              <div key={saucesMenuItems.id}>
+                <p className="menu-item-name">{menuItems.name}</p>
+                <p className="menu-item-additional">{menuItems.additional}</p>
+                <p className="menu-item-description">{menuItems.description}</p>
+                <p className="menu-item-price">{menuItems.price}</p>
+              </div>
+            ))}
+          </p>
+        ) : (
+          ""
+        )}
       </div>
+      <a
+        href="https://media-cdn.getbento.com/accounts/b6253aca09c92b4b1d36271dda746e37/media/qp8VwkAYQWShqUrhshP5_Half%20Moon%20Menu%20Boards%202023%20%28TC%29.pdf"
+        className="a"
+      >
+        <p>Click here for pdf</p>
+      </a>
     </div>
   );
 }
