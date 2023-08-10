@@ -21,7 +21,7 @@ export default function ContactUsSection() {
         </p>
         <div className="contact-us-description">
           <form
-            action="mailto:hungrafael37@gmail.com"
+            action="mailto:info@halfmoonseafood.com"
             method="post"
             enctype="text/plain"
           >
