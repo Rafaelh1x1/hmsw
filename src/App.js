@@ -12,15 +12,17 @@ import StickyBar from "./components/stickyBar";
 function App() {
   return (
     <body className="body">
-      <TopBanner text="615 Channelside Dr, Tampa, FL 33602"></TopBanner>
-      <div className="pain">
-        <BestSellersSection className="hidden"></BestSellersSection>
-        <MenuSection className="hidden" />
-        <HoursAndLocations className="hidden" />
-        <AboutUs className="hidden" />
-      </div>
-      <ContactUsSection className="hidden" />
-      <StickyBar className="hidden"></StickyBar>
+      <load className="load">
+        <TopBanner text="615 Channelside Dr, Tampa, FL 33602"></TopBanner>
+        <div className="pain">
+          <BestSellersSection className="hidden"></BestSellersSection>
+          <MenuSection className="hidden" />
+          <HoursAndLocations className="hidden" />
+          <AboutUs className="hidden" />
+        </div>
+        <ContactUsSection className="hidden" />
+        <StickyBar className="hidden"></StickyBar>
+      </load>
     </body>
   );
 }

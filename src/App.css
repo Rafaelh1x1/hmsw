@@ -171,10 +171,12 @@
   background-color: #67b0b3;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  z-index: 5000;
 }
 
 #best-seller-section {
   animation: slideInDown 1s ease-in-out forwards;
+  z-index: 100;
 }
 .best-seller-section {
   display: flex;
