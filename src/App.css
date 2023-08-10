@@ -10,6 +10,17 @@
   }
 }
 
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -32,9 +43,13 @@
 
 .container {
   text-align: center;
+  animation: slideInDown 1s ease-in-out forwards;
 }
 
 /* THIS IS THE TOP HEADER ONLY */
+.top-banner-section {
+  animation: slideInDown 1s ease-in-out forwards;
+}
 .top-banner {
   font-size: calc(0.4vw + 1em);
   text-align: center;
@@ -46,6 +61,7 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   text-transform: uppercase;
+  animation: slideInDown 1s ease-in-out forwards;
 }
 /* Removes the underline from the top banner */
 .a {
@@ -154,9 +170,11 @@
   background-color: #67b0b3;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  animation: slideInDown 1s ease-in-out forwards;
 }
 
 .best-seller-section {
+  animation: slideInDown 1s ease-in-out forwards;
   display: flex;
   align-items: top;
   justify-content: center;

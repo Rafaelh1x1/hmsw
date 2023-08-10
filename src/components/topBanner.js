@@ -78,7 +78,9 @@ function TopBanner(props) {
             </p>{" "}
           </AnchorLink>
           <AnchorLink href="#menu-section">
-            <p class="quick-nav-text">MENU</p>
+            <p class="quick-nav-text" onClick={handleNavToggle}>
+              MENU
+            </p>
           </AnchorLink>
           <AnchorLink href="#hours-locations-section">
             <p class="quick-nav-text" onClick={handleNavToggle}>
