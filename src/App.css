@@ -41,9 +41,12 @@
   overflow: hidden;
 }
 
+.load {
+  animation: slideInDown 1s ease-in-out forwards;
+}
+
 .container {
   text-align: center;
-  animation: slideInDown 1s ease-in-out forwards;
 }
 
 /* THIS IS THE TOP HEADER ONLY */
@@ -61,7 +64,6 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   text-transform: uppercase;
-  animation: slideInDown 1s ease-in-out forwards;
 }
 /* Removes the underline from the top banner */
 .a {
@@ -110,7 +112,6 @@
   background-color: rgba(103, 176, 179, 1);
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
-  text-decoration: none;
 }
 .quick-nav-text {
   font-family: "Lilita One";
@@ -118,7 +119,7 @@
   font-size: calc(0.2vw + 1em);
   letter-spacing: 0.1rem;
   cursor: pointer;
-  padding-bottom: 1rem;
+  padding-bottom: 0.4rem;
   color: #e0eff2;
   text-decoration: underline;
 }
@@ -170,11 +171,12 @@
   background-color: #67b0b3;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
-  animation: slideInDown 1s ease-in-out forwards;
 }
 
-.best-seller-section {
+#best-seller-section {
   animation: slideInDown 1s ease-in-out forwards;
+}
+.best-seller-section {
   display: flex;
   align-items: top;
   justify-content: center;
