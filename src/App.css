@@ -34,27 +34,6 @@
   text-align: center;
 }
 
-/* BUTTONS STYLING  */
-
-/* BUTTONS FOR THE MENU SECTION  */
-.menu-button {
-  font-family: "Lilita One";
-  font-size: calc(2vw + 1em);
-  padding: 0.5rem;
-  border: 0.5rem #67b0b3 groove;
-  background-color: #224344;
-  color: #efebcf;
-}
-.menu-button:hover {
-  border: 0.5rem #cf4929 groove;
-  background-color: #66b0b3;
-  color: #efebcf;
-}
-
-/* This class is for things to not be visible works with the javascript */
-.hidden {
-  display: none;
-}
 /* THIS IS THE TOP HEADER ONLY */
 .top-banner {
   font-size: calc(0.4vw + 1em);
@@ -90,14 +69,6 @@
   margin-top: 0.5rem;
 }
 
-.top-banner-logo {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(102, 176, 179, 0.4);
-  border-radius: 5rem;
-}
 /* CSS STYLINF FOR THE LETTERS OVER THE MAIN BANENR IMAGE  */
 /* .text-overlay {
   position: absolute;
@@ -113,23 +84,33 @@
 
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  height: auto;
+  gap: 5rem;
+
+  margin-bottom: 100rem;
   width: 100vw;
   color: #e0eff2;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgba(103, 176, 179, 1);
-  padding: 5px;
+  z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
 }
 .quick-nav-text {
   font-family: "Lilita One";
   font-weight: 500;
   font-size: calc(0.2vw + 1em);
+  letter-spacing: 0.1rem;
   cursor: pointer;
+  padding-bottom: 1rem;
+}
+.quick-nav-text:hover {
+  color: #497f81;
+}
+.quick-nav-text:last-child {
+  padding-bottom: 100rem;
 }
 .mobile-nav-container {
   display: flex;
@@ -137,12 +118,7 @@
   align-items: center;
   background-color: #67b0b3;
 }
-.open-nav {
-  display: none;
-  color: #e0eff2;
-}
-.close-nav {
-  display: none;
+.nav-button {
   color: #e0eff2;
 }
 /* Styling for top image that states half moon seafood co. */
