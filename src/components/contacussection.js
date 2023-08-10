@@ -20,7 +20,11 @@ export default function ContactUsSection() {
           hearing from you.
         </p>
         <div className="contact-us-description">
-          <form>
+          <form
+            action="hungrafael37@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
             <p>
               <label for="contact-us-name">Name:</label>
               <br></br>
@@ -59,7 +63,7 @@ export default function ContactUsSection() {
             <p>
               {" "}
               <label for="contact-us-submit"></label>
-              <input type="submit" id="contact-us-submit"></input>
+              <input type="submit" value="send" id="contact-us-submit"></input>
             </p>
           </form>
         </div>
