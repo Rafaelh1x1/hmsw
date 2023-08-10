@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactUsSection() {
   return (
-    <div className="container">
+    <div className="container" id="contact-us-section">
       <div className="contact-us-section">
         <div className="contact-us-banner">
           <img

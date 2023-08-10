@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div className="container">
+    <div className="container" id="about-us-section">
       <div className="about-us-img-container">
         {/* <img
           src={require("./images/half-moon-bay.jpg")}

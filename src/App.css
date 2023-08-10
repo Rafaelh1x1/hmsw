@@ -84,19 +84,17 @@
 
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
-
-  margin-bottom: 100rem;
   width: 100vw;
   color: #e0eff2;
-  /* text-align: center; */
   background-color: rgba(103, 176, 179, 1);
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
+  text-decoration: none;
 }
 .quick-nav-text {
   font-family: "Lilita One";
@@ -105,12 +103,18 @@
   letter-spacing: 0.1rem;
   cursor: pointer;
   padding-bottom: 1rem;
+  color: #e0eff2;
+  text-decoration: underline;
 }
 .quick-nav-text:hover {
   color: #497f81;
 }
-.quick-nav-text:last-child {
-  padding-bottom: 100rem;
+#about-us-section {
+  text-decoration: none;
+}
+
+.quick-nav-text::after {
+  text-decoration: none;
 }
 .mobile-nav-container {
   display: flex;

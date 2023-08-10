@@ -1,7 +1,7 @@
 import React from "react";
 export default function HoursAndLocations() {
   return (
-    <div className="container">
+    <div className="container" id="hours-locations-section">
       <p className="hours-locations-heading">HOURS & LOCATIONS</p>
       <div className="hours-location-maps-container">
         <div>

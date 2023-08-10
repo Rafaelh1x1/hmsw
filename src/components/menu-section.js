@@ -176,7 +176,7 @@ export default function MenuSection() {
   const [menuType, setMenuType] = useState(0);
 
   return (
-    <div>
+    <div id="menu-section">
       <p className=" menu-heading">MENU</p>
 
       <div className="menu-sparkman">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import QuickNav from "./QuickNav";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function TopBanner(props) {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -23,7 +23,7 @@ function TopBanner(props) {
   };
 
   return (
-    <div className="top-banner-section">
+    <div className="top-banner-section" id="top-banner-section">
       <a
         href="https://www.google.com/maps/dir/27.4724016,-82.4211016/halfmoon+seafood/@27.7105839,-82.8332828,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88c2c59e23db4b51:0xb139c480f6bf4ee1!2m2!1d-82.4461237!2d27.943512?entry=ttu"
         className="a"
@@ -70,7 +70,33 @@ function TopBanner(props) {
         )}
       </div>
 
-      {isNavOpen && <QuickNav />}
+      {isNavOpen && (
+        <div class="quick-nav">
+          <AnchorLink href="#best-seller-section">
+            <p class="quick-nav-text" onClick={handleNavToggle}>
+              BEST-SELLERS
+            </p>{" "}
+          </AnchorLink>
+          <AnchorLink href="#menu-section">
+            <p class="quick-nav-text">MENU</p>
+          </AnchorLink>
+          <AnchorLink href="#hours-locations-section">
+            <p class="quick-nav-text" onClick={handleNavToggle}>
+              HOURS & LOCATIONS
+            </p>
+          </AnchorLink>
+          <AnchorLink href="#about-us-section">
+            <p class="quick-nav-text" onClick={handleNavToggle}>
+              ABOUT US
+            </p>
+          </AnchorLink>
+          <AnchorLink href="#contact-us-section">
+            <p class="quick-nav-text" onClick={handleNavToggle}>
+              CONTACT
+            </p>
+          </AnchorLink>
+        </div>
+      )}
 
       <div className="top-banner-img-container">
         <img

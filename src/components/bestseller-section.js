@@ -7,7 +7,7 @@ import HotTossChik from "./images/HotTossChik.jpg";
 
 export default function BestSellersSection() {
   return (
-    <div>
+    <div id="best-seller-section">
       <div class="best-sellers-subheading">
         <p>OUR BEST SELLERS</p>
       </div>
