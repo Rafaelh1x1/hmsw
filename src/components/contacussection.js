@@ -21,7 +21,7 @@ export default function ContactUsSection() {
         </p>
         <div className="contact-us-description">
           <form
-            action="hungrafael37@gmail.com"
+            action="mailto:hungrafael37@gmail.com"
             method="post"
             enctype="text/plain"
           >
@@ -39,7 +39,7 @@ export default function ContactUsSection() {
               <input type="text" id="contact-us-phone"></input>
             </p>
             <p>
-              <label for="contact-us-reason">Reason for reaching out??</label>{" "}
+              <label for="contact-us-reason">Reason for reaching out?</label>{" "}
               <br></br>
               <input type="text" id="contact-us-reason"></input>
             </p>
