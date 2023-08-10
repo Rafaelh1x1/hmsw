@@ -14,13 +14,13 @@ function App() {
     <body className="body">
       <TopBanner text="615 Channelside Dr, Tampa, FL 33602"></TopBanner>
       <div className="pain">
-        <BestSellersSection></BestSellersSection>
-        <MenuSection />
-        <HoursAndLocations />
-        <AboutUs />
+        <BestSellersSection className="hidden"></BestSellersSection>
+        <MenuSection className="hidden" />
+        <HoursAndLocations className="hidden" />
+        <AboutUs className="hidden" />
       </div>
-      <ContactUsSection />
-      <StickyBar></StickyBar>
+      <ContactUsSection className="hidden" />
+      <StickyBar className="hidden"></StickyBar>
     </body>
   );
 }

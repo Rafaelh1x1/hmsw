@@ -9,6 +9,16 @@
     opacity: 1;
   }
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -103,9 +113,6 @@
 
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
-  font-family: "Secular One";
-  font-weight: 500;
-  font-size: calc(0.2vw + 1em);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,8 +123,12 @@
   text-align: center;
   background-color: rgba(103, 176, 179, 1);
   padding: 5px;
+  animation: slideDown 0.5s ease-in-out both;
 }
 .quick-nav-text {
+  font-family: "Lilita One";
+  font-weight: 500;
+  font-size: calc(0.2vw + 1em);
   cursor: pointer;
 }
 .mobile-nav-container {
