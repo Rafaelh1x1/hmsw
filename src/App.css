@@ -451,10 +451,6 @@
 
 /* CONTACT US SECTION  */
 
-.contact-us-section {
-  background-color: #004851;
-}
-
 .contact-us-banner {
   position: relative;
 }
@@ -478,8 +474,8 @@
 }
 
 .contact-us-description-text {
-  font-size: calc(0.5vw + 1em);
-  font-weight: 600;
+  font-size: calc(0.6vw + 1em);
+  font-weight: 700;
   font-family: "Montserrat";
 
   padding: 3rem;
@@ -504,11 +500,12 @@
   font-weight: 700;
   cursor: pointer;
   padding: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 10rem;
   color: #efebcf;
   background-color: #004851;
-  border: 0.4rem #cf4929 solid;
+  border: 0.6rem #cf4929 solid;
+}
+#contact-us-submit:hover {
+  color: #cf4929;
 }
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
 

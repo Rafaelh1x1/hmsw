@@ -34,7 +34,7 @@ export default function AboutUs() {
             Co. was <strong>born to challenge the seafood status quo.</strong>
             Founded in 2020, the Half Moon team is committed to providing our
             guests with <strong>quality</strong> seafood in an{" "}
-            <strong>affordable</strong>,<strong>fast-casual</strong> format.
+            <strong>affordable</strong>,<strong> fast-casual</strong> format.
           </p>
           <p>
             We take pride in our relationships with our suppliers to ensure we

@@ -12,7 +12,23 @@ export default function ContactUsSection() {
             height="auto"
             className="contact-us-banner-img"
           />
-          <p className="contact-us-banner-text">CONTACT US OR JOIN US</p>
+
+          <div className="contact-us-description contact-us-banner-text">
+            <form
+              action="mailto:info@halfmoonseafood.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <p>
+                <label for="contact-us-submit"></label>
+                <input
+                  type="submit"
+                  value="Click Here To Contact Us"
+                  id="contact-us-submit"
+                ></input>
+              </p>
+            </form>
+          </div>
         </div>
         <p className="contact-us-description-text">
           Send us a message and we’ll get back to you as soon as possible. Feel
@@ -21,22 +37,6 @@ export default function ContactUsSection() {
           Make sure to send your first and last name, and a way to contact you
           either phone or email!
         </p>
-        <div className="contact-us-description">
-          <form
-            action="mailto:info@halfmoonseafood.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <p>
-              <label for="contact-us-submit"></label>
-              <input
-                type="submit"
-                value="Contact Us"
-                id="contact-us-submit"
-              ></input>
-            </p>
-          </form>
-        </div>
       </div>
     </div>
   );

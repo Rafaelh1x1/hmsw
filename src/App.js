@@ -17,8 +17,9 @@ function App() {
           <MenuSection className="hidden" />
           <HoursAndLocations className="hidden" />
           <AboutUs className="hidden" />
+
+          <ContactUsSection className="hidden" />
         </div>
-        <ContactUsSection className="hidden" />
         <StickyBar className="hidden"></StickyBar>
       </load>
     </body>
