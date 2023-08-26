@@ -24,12 +24,8 @@ function TopBanner(props) {
 
   return (
     <div className="top-banner-section" id="top-banner-section">
-      <a
-        href="https://www.google.com/maps/dir/27.4724016,-82.4211016/halfmoon+seafood/@27.7105839,-82.8332828,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88c2c59e23db4b51:0xb139c480f6bf4ee1!2m2!1d-82.4461237!2d27.943512?entry=ttu"
-        className="a"
-      >
-        <p className="top-banner">{props.text}</p>
-      </a>
+      <p className="top-banner">{props.text}</p>
+
       <div className={`mobile-nav-container ${isMobileView ? "" : "hidden"}`}>
         {isNavOpen ? (
           <svg
@@ -102,17 +98,19 @@ function TopBanner(props) {
 
       <div className="top-banner-img-container">
         <img
-          src={require("./images/map-background7.jpg")}
+          src={require("./images/top-banner-img.jpg")}
           alt="map of half moon bay "
           width="100%vw"
           height="auto"
           className="top-banner-img"
         />
-        {/* <div className="text-overlay">
-          <p className="top-banner-img-bold-text">HALF MOON</p>
-          <p className="top-banner-img-bold-text">Seafood Co.</p>
-          <p className="top-banner-img-ss-text">Sustainably Sourced seafood</p>
-        </div> */}
+        <div className="text-overlay">
+          <img
+            src={require("./images/Half-Moon-Rope-Logo.png")}
+            alt="half moon seafood logo "
+            className="text-overlay"
+          />
+        </div>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@
 
 .body {
   font-family: "Lilita One";
-  background-color: #c9e3e4;
+  background-color: #004851;
   overflow: hidden;
 }
 
@@ -60,7 +60,7 @@
   padding: 0.5rem;
   color: #efebcf;
   margin-top: 0.5rem;
-  background-color: #67b0b3;
+  background-color: #004851;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   text-transform: uppercase;
@@ -68,12 +68,6 @@
 /* Removes the underline from the top banner */
 .a {
   text-decoration: none;
-}
-.top-banner:hover {
-  color: #cf4929;
-  background-color: #224344;
-
-  text-shadow: 0 0 19px #cf4929;
 }
 
 .top-banner-img-container {
@@ -88,17 +82,18 @@
 }
 
 /* CSS STYLINF FOR THE LETTERS OVER THE MAIN BANENR IMAGE  */
-/* .text-overlay {
+.text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: rgba(102, 176, 179, 0.5); */
-/* border-radius: 5rem; */
-/* color: #224344; */
-/* padding: 1rem; */
-/* width: 30vw; */
-/* text-align: center; */
+  border-radius: 5rem;
+  color: #224344;
+  padding: 1rem;
+  width: 90vw;
+  height: auto;
+  text-align: center;
+}
 
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
@@ -109,7 +104,7 @@
   gap: 5rem;
   width: 100vw;
   color: #e0eff2;
-  background-color: rgba(103, 176, 179, 1);
+  background-color: #004851;
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
 }
@@ -141,6 +136,12 @@
 }
 .nav-button {
   color: #e0eff2;
+  width: 100%;
+  cursor: pointer;
+  background-color: #004851;
+}
+.nav-button:hover {
+  background-color: #4b9395;
 }
 /* Styling for top image that states half moon seafood co. */
 /* .top-banner-img-bold-text {
@@ -187,7 +188,7 @@
 }
 /* THIS IS FOR THE BACKGROUND OF TEH SECTIONS BEST-SELLER THROUGH ABOUT US */
 .pain {
-  background-image: url("./components/images/blue-background.png");
+  background-image: url("./components/images/background2.0.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -274,9 +275,10 @@
   letter-spacing: 1rem;
   margin-bottom: 2rem;
   color: #efebcf;
-  background-color: #67b0b3;
+  background-color: #004851;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  border: 0.5rem #efebcf solid;
 }
 /* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
 .menu-item-flex {
@@ -300,7 +302,7 @@
 }
 
 .menu-item-type:hover {
-  color: #224344;
+  color: #99371e;
   text-shadow: 0 0 19px #cf4929;
 }
 
@@ -314,15 +316,15 @@
 }
 .menu-item-additional {
   font-size: calc(0.3vw + 1em);
-  color: #497f81;
+  color: #002429;
 }
 .menu-item-description {
   font-size: calc(0.5vw + 1em);
-  color: #224344;
+  color: #efebcf;
 }
 .menu-item-price {
   font-style: oblique;
-  color: #497f81;
+  color: #002429;
   margin-bottom: 1rem;
 }
 
@@ -346,9 +348,10 @@
   margin-top: 10rem;
   margin-bottom: 2rem;
   color: #efebcf;
-  background-color: #67b0b3;
+  background-color: #004851;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  border: 0.5rem #efebcf solid;
 }
 /* THIS SETS THE ORIENTATION OF THE MAPS AND THE INFO IN THE HOURS AND LCOATION SECTION */
 .hours-location-maps-container {
@@ -383,7 +386,7 @@
 .sw-info-title {
   font-size: calc(3vw + 1em);
   letter-spacing: 0.2rem;
-  color: #224344;
+  color: #cf4929;
   margin-top: 2rem;
 }
 .sw-info-title:first-child {
@@ -391,7 +394,7 @@
 }
 .sw-info-text {
   font-size: calc(0.5vw + 1em);
-  color: #497f81;
+  color: #efebcf;
 }
 
 /* Styling so that the address highlights */
@@ -414,9 +417,10 @@
   left: 50%;
   transform: translate(-50%, -50%); */
   color: #efebcf;
-  background-color: #67b0b3;
+  background-color: #004851;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  border: 0.5rem #efebcf solid;
 }
 
 /* Stylinf for formatting of the bottom half of the about us section */
@@ -442,13 +446,13 @@
   gap: 3vw;
   margin-right: 1rem;
   margin-left: 1rem;
-  color: #224344;
+  color: #efebcf;
 }
 
 /* CONTACT US SECTION  */
 
 .contact-us-section {
-  background-color: #262512;
+  background-color: #004851;
 }
 
 .contact-us-banner {
@@ -457,6 +461,7 @@
 
 .contact-us-banner-img {
   border-top: 0.5rem #cf4929 solid;
+  border-bottom: 0.5rem #cf4929 solid;
 }
 
 .contact-us-banner-text {
@@ -474,6 +479,7 @@
 
 .contact-us-description-text {
   font-size: calc(0.5vw + 1em);
+  font-weight: 600;
   font-family: "Montserrat";
 
   padding: 3rem;
@@ -501,7 +507,7 @@
   margin-top: 3rem;
   margin-bottom: 10rem;
   color: #efebcf;
-  background-color: #262512;
+  background-color: #004851;
   border: 0.4rem #cf4929 solid;
 }
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
