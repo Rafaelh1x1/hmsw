@@ -63,6 +63,7 @@
   background-color: #004851;
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
+  border: 0.5rem #efebcf solid;
   text-transform: uppercase;
 }
 /* Removes the underline from the top banner */
@@ -90,7 +91,7 @@
   border-radius: 5rem;
   color: #224344;
   padding: 1rem;
-  width: 90vw;
+  width: 100vw;
   height: auto;
   text-align: center;
 }
@@ -333,7 +334,7 @@
   color: #cf4929;
 }
 .menu-jpg:hover {
-  color: #224344;
+  color: #efebcf;
   text-shadow: 0 0 19px #cf4929;
 }
 
@@ -345,7 +346,7 @@
   vertical-align: center;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   color: #efebcf;
   background-color: #004851;

@@ -79,12 +79,6 @@
     padding-top: 2rem;
   }
 
-  .menu-item-img {
-    height: auto;
-    width: 100vw;
-    margin-left: 0;
-  }
-
   /* HOUR AND LOCATION SECTION */
   .hours-location-maps-container {
     display: flex;
@@ -117,19 +111,18 @@
 }
 
 @media (max-width: 400px) {
-  .text-overlay {
+  /* .text-overlay {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
+
     border-radius: 5rem;
     color: #e0eff2;
     padding: 0.5rem;
     width: 45vw;
     text-align: center;
-    border: 1rem #cf4929 groove;
-  }
+  } */
   .top-banner-img-bold-text {
     font-family: "Lilita One";
     font-size: calc(0.5vw + 1em);
