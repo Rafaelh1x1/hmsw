@@ -115,39 +115,7 @@
     width: 100vw;
   }
 }
-@media (max-width: 500px) {
-  #conatct-us-name {
-    width: 20rem;
-    height: 2rem;
-    color: #efebcf;
-    background-color: #262512;
-    border: 0.2rem #67b0b3 solid;
-  }
 
-  #contact-us-email {
-    width: 20rem;
-    height: 2rem;
-    color: #efebcf;
-    background-color: #262512;
-    border: 0.2rem #67b0b3 solid;
-  }
-
-  #contact-us-phone {
-    width: 20rem;
-    height: 2rem;
-    color: #efebcf;
-    background-color: #262512;
-    border: 0.2rem #67b0b3 solid;
-  }
-
-  #contact-us-reason {
-    width: 20rem;
-    height: 4rem;
-    color: #efebcf;
-    background-color: #262512;
-    border: 0.2rem #67b0b3 solid;
-  }
-}
 @media (max-width: 400px) {
   .text-overlay {
     position: absolute;
