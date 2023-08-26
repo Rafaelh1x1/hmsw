@@ -173,7 +173,7 @@ export default function MenuSection() {
   const kidsMenuItems = menuItems.filter((item) => item.category === "6");
   const saucesMenuItems = menuItems.filter((item) => item.category === "7");
 
-  const [menuType, setMenuType] = useState(0);
+  const [menuType, setMenuType] = useState(1);
 
   return (
     <div id="menu-section">
@@ -206,16 +206,6 @@ export default function MenuSection() {
         </div>
 
         {/* conditional rendering to show specific menu item types */}
-
-        {menuType === 0 ? (
-          <div className="menu-choose">
-            <p className="choose-type">
-              CHOOSE ONE OF THE ABOVE TO GET STARTED!
-            </p>
-          </div>
-        ) : (
-          ""
-        )}
 
         {menuType === 1 ? (
           <div className="menu-sandwich">
