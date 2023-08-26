@@ -40,6 +40,9 @@
   background-color: #004851;
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
 
 .load {
   animation: slideInDown 1s ease-in-out forwards;
@@ -104,7 +107,7 @@
   align-items: center;
   gap: 5rem;
   width: 100vw;
-  color: #e0eff2;
+  color: #efebcf;
   background-color: #004851;
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
@@ -116,7 +119,7 @@
   letter-spacing: 0.1rem;
   cursor: pointer;
   padding-bottom: 0.4rem;
-  color: #e0eff2;
+  color: #efebcf;
   text-decoration: underline;
 }
 .quick-nav-text:hover {
@@ -133,10 +136,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #67b0b3;
+  background-color: #004851;
 }
 .nav-button {
-  color: #e0eff2;
+  color: #efebcf;
   width: 100%;
   cursor: pointer;
   background-color: #004851;
@@ -280,6 +283,7 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   border: 0.5rem #efebcf solid;
+  animation: slideDown 0.5s ease-in-out both;
 }
 /* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
 .menu-item-flex {
@@ -289,12 +293,9 @@
   margin-bottom: 1.5rem;
   gap: 1.5vw;
   cursor: pointer;
+  animation: slideDown 0.5s ease-in-out both;
 }
-.choose-type {
-  font-size: calc(1.5vw + 1em);
-  margin-bottom: 1.5rem;
-  color: #224344;
-}
+
 .menu-item-type {
   font-size: calc(0.5vw + 1em);
   font-weight: 500;
@@ -309,6 +310,7 @@
 
 .menu-sparkman {
   text-align: center;
+  animation: slideDown 0.5s ease-in-out both;
 }
 .menu-item-name {
   font-size: calc(2vw + 1em);

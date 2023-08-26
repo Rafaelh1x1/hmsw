@@ -11,9 +11,9 @@
     gap: 1rem;
     height: auto;
     width: 100vw;
-    color: #e0eff2;
+    color: #efebcf;
     text-align: center;
-    background-color: rgba(103, 176, 179, 1);
+    background-color: #004851;
     padding: 5px;
   }
   .open-nav {
@@ -58,12 +58,12 @@
 
   .menu-item-flex {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: center;
+    align-self: top;
     margin-bottom: 1.5rem;
-    gap: 1.5vw;
+    /* gap: 1.5vw; */
     cursor: pointer;
   }
   .menu-item-type {
@@ -108,21 +108,13 @@
     height: 100vw;
     width: 100vw;
   }
+
+  .menu-item-type {
+    font-size: calc(0.05vw + 1em);
+  }
 }
 
 @media (max-width: 400px) {
-  /* .text-overlay {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 5rem;
-    color: #e0eff2;
-    padding: 0.5rem;
-    width: 45vw;
-    text-align: center;
-  } */
   .top-banner-img-bold-text {
     font-family: "Lilita One";
     font-size: calc(0.5vw + 1em);
