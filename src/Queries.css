@@ -134,4 +134,16 @@
     font-weight: 500;
     font-size: calc(0.01vw + 1em);
   }
+
+  /* Contact Us Section */
+  .contact-us-description-text {
+    font-size: calc(0.1vw + 1em);
+    font-weight: 600;
+  }
+
+  #contact-us-submit {
+    font-size: calc(0.1vw + 1em);
+    padding: 0.5rem;
+    border: 0.3rem #cf4929 solid;
+  }
 }
