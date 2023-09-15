@@ -137,9 +137,11 @@
 
   /* MENU SECTION */
   .menu-item-flex {
-    font-size: 0.8rem;
-    font-weight: 400;
-    gap: 0.8;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
   }
 
   /* Contact Us Section */
