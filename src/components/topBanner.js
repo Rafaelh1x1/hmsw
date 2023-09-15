@@ -23,7 +23,7 @@ function TopBanner(props) {
   };
 
   return (
-    <div className="top-banner-section" id="top-banner-section">
+    <div className="top-banner-section load" id="top-banner-section">
       <p className="top-banner">{props.text}</p>
 
       <div className={`mobile-nav-container ${isMobileView ? "" : "hidden"}`}>
@@ -68,11 +68,6 @@ function TopBanner(props) {
 
       {isNavOpen && (
         <div class="quick-nav">
-          <AnchorLink href="#best-seller-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              BEST-SELLERS
-            </p>{" "}
-          </AnchorLink>
           <AnchorLink href="#menu-section">
             <p class="quick-nav-text" onClick={handleNavToggle}>
               MENU

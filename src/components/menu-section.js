@@ -177,10 +177,10 @@ export default function MenuSection() {
 
   return (
     <div id="menu-section">
-      <p className=" menu-heading">MENU</p>
+      <p className=" menu-heading load">MENU</p>
 
-      <div className="menu-sparkman">
-        <div class="menu-item-flex">
+      <div className="menu-sparkman load">
+        <div class="menu-item-flex load">
           {/* Setting functionality */}
           <p class="menu-item-type" onClick={() => setMenuType(1)}>
             SANDWICHES

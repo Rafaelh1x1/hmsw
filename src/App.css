@@ -1,4 +1,5 @@
 /* ANIMATIONS */
+/* Used for name of menu items */
 @keyframes popUp {
   0% {
     transform: scale(0.5);
@@ -9,7 +10,7 @@
     opacity: 1;
   }
 }
-
+/* animation for whenever web page opens up */
 @keyframes slideInDown {
   0% {
     transform: translateY(-100%);
@@ -20,7 +21,7 @@
     opacity: 1;
   }
 }
-
+/* Animation specifically for opening of quick nav */
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -44,6 +45,7 @@
   display: none;
 }
 
+/* Class that manages all the loading animation */
 .load {
   animation: slideInDown 1s ease-in-out forwards;
 }
@@ -52,9 +54,16 @@
   text-align: center;
 }
 
+/* THIS IS FOR THE BACKGROUND OF THE SECTIONS MENU THROUGH ABOUT US */
+.background-image {
+  background-image: url("./components/images/background2.0.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 /* THIS IS THE TOP HEADER ONLY */
 .top-banner-section {
-  animation: slideInDown 1s ease-in-out forwards;
 }
 .top-banner {
   font-size: calc(0.4vw + 1em);
@@ -68,10 +77,6 @@
   border-bottom: 0.5rem #efebcf solid;
   border: 0.5rem #efebcf solid;
   text-transform: uppercase;
-}
-/* Removes the underline from the top banner */
-.a {
-  text-decoration: none;
 }
 
 .top-banner-img-container {
@@ -147,22 +152,16 @@
 .nav-button:hover {
   background-color: #4b9395;
 }
-/* Styling for top image that states half moon seafood co. */
-/* .top-banner-img-bold-text {
-  font-family: "Lilita One";
-  font-size: calc(3.5vw + 1em);
-} */
-/* Styling for top image that states sustainably sourced seafood */
-/* .top-banner-img-ss-text {
-  font-family: "Montserrat";
-  font-size: calc(1vw + 1em);
-  font-weight: 100;
-} */
+
 /* THE IMAGE RIGHT UNDER THE TOP HEADER */
 .top-banner-img {
   height: 50vw;
   width: auto;
 }
+
+/* This best sellers section is styling for an unused section, I decided
+not to erase it because I feel like in the future the ode and styling could 
+come in handy */
 
 /* Specific styling for the Best sellers subheading */
 .best-sellers-subheading {
@@ -190,13 +189,7 @@
   gap: 4vw;
   padding: 1rem;
 }
-/* THIS IS FOR THE BACKGROUND OF TEH SECTIONS BEST-SELLER THROUGH ABOUT US */
-.pain {
-  background-image: url("./components/images/background2.0.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-}
+
 .best-seller-card {
   display: flex;
   flex-direction: column;
@@ -283,7 +276,6 @@
   border-top: 0.5rem #efebcf solid;
   border-bottom: 0.5rem #efebcf solid;
   border: 0.5rem #efebcf solid;
-  animation: slideDown 0.5s ease-in-out both;
 }
 /* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
 .menu-item-flex {
@@ -293,7 +285,6 @@
   margin-bottom: 1.5rem;
   gap: 1.5vw;
   cursor: pointer;
-  animation: slideDown 0.5s ease-in-out both;
 }
 
 .menu-item-type {
@@ -310,7 +301,6 @@
 
 .menu-sparkman {
   text-align: center;
-  animation: slideDown 0.5s ease-in-out both;
 }
 .menu-item-name {
   font-size: calc(2vw + 1em);

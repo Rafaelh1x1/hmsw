@@ -13,7 +13,7 @@ function App() {
     <body className="body">
       <load className="load">
         <TopBanner text="615 Channelside Dr, Tampa, FL 33602"></TopBanner>
-        <div className="pain">
+        <div className="background-image">
           <MenuSection className="hidden" />
           <HoursAndLocations className="hidden" />
           <AboutUs className="hidden" />
