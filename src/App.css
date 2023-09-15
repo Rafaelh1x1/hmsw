@@ -31,6 +31,18 @@
   }
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +65,10 @@
 .container {
   text-align: center;
 }
-
+.a {
+  text-decoration: none;
+  background-color: none;
+}
 /* THIS IS FOR THE BACKGROUND OF THE SECTIONS MENU THROUGH ABOUT US */
 .background-image {
   background-image: url("./components/images/background2.0.png");
@@ -502,6 +517,30 @@ come in handy */
 #contact-us-submit:hover {
   color: #cf4929;
 }
+
+/* Handle section */
+.handle-section {
+  font-family: "Press Start 2P";
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #efebcf;
+  gap: 0.3rem;
+  padding: 0.4rem;
+  border: 0.1rem #cf4929 solid;
+}
+.handle-section:hover {
+  background-color: #cf4929;
+  border: 0.1rem #497f81 solid;
+}
+.handle-1 {
+  animation: blink 1s infinite;
+}
+.handle-2 {
+  animation: blink 1s infinite;
+}
+
 /* CSS FOR STICKY BAR NEAR THE BOTTOM LEFT  */
 
 .sticky-bar {

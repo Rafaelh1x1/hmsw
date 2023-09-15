@@ -6,6 +6,7 @@ import HoursAndLocations from "./components/hoursandlocations";
 import MenuSection from "./components/menu-section";
 import AboutUs from "./components/aboutus";
 import ContactUsSection from "./components/contacussection";
+import Handle from "./components/handle";
 import StickyBar from "./components/stickyBar";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
           <ContactUsSection className="hidden" />
         </div>
+        <Handle></Handle>
         <StickyBar className="hidden"></StickyBar>
       </load>
     </body>
