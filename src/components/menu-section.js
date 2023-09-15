@@ -171,6 +171,8 @@ export default function MenuSection() {
   const sidesMenuItems = menuItems.filter((item) => item.category === "4");
   const sweetsMenuItems = menuItems.filter((item) => item.category === "5");
   const kidsMenuItems = menuItems.filter((item) => item.category === "6");
+  // Didn't use this section because it made it uneven and
+  // didn't want to make a list and style and blah blah blah
   const saucesMenuItems = menuItems.filter((item) => item.category === "7");
 
   const [menuType, setMenuType] = useState(1);
@@ -199,9 +201,6 @@ export default function MenuSection() {
           </p>
           <p class="menu-item-type" onClick={() => setMenuType(6)}>
             KIDS
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(7)}>
-            SAUCES
           </p>
         </div>
 
