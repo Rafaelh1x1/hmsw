@@ -136,12 +136,28 @@
   }
 
   /* MENU SECTION */
+
+  .menu-heading {
+    font-size: calc(10vw + 1em);
+  }
+
   .menu-item-flex {
     font-size: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
+  }
+
+  /* HOURS AND LOCATION */
+  .hours-locations-heading {
+    font-size: calc(10vw + 1em);
+  }
+
+  /* ABOUT US SECTION */
+
+  .about-us-heading {
+    font-size: calc(10vw + 1em);
   }
 
   /* Contact Us Section */

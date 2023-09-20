@@ -18,7 +18,7 @@ export default function AboutUs() {
           height="auto"
           className="about-us-logo"
         />
-        <p className="about-us-img-text">WHO WE ARE</p>
+        <p className="about-us-heading">ABOUT US</p>
       </div>
 
       <div className="about-us-description-text">

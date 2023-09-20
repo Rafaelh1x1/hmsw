@@ -31,11 +31,7 @@ export default function ContactUsSection() {
           </div>
         </div>
         <p className="contact-us-description-text">
-          Send us a message and we’ll get back to you as soon as possible. Feel
-          free to send us your resume and information. Looking forward to
-          hearing from you.<br></br>
-          Make sure to send your first and last name, and a way to contact you
-          either phone or email!
+          Send us a message and we’ll get back to you as soon as possible.
         </p>
       </div>
     </div>
