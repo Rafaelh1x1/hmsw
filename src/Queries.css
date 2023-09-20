@@ -1,3 +1,4 @@
+/* STYLING FOR TEXT IN ABOUT US SECTION */
 @media (min-width: 1400px) {
   .about-us-description-text {
     margin-left: 10rem;
@@ -24,12 +25,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    height: auto;
+    height: 300vh;
     width: 100vw;
     color: #efebcf;
     text-align: center;
     background-color: #004851;
     padding: 5px;
+    z-index: 9999;
   }
   .open-nav {
     display: block;
@@ -157,7 +159,7 @@
   }
 
   .menu-item-flex {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;

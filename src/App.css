@@ -294,6 +294,10 @@ come in handy */
   border: 0.5rem #efebcf solid;
 }
 /* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
+#menu-section {
+  z-index: 999;
+  overflow: hidden;
+}
 .menu-item-flex {
   display: flex;
   align-items: center;
@@ -312,7 +316,7 @@ come in handy */
 
 .menu-item-type:hover {
   color: #99371e;
-  text-shadow: 0 0 19px #cf4929;
+  text-shadow: 0 0 5px #cf4929;
 }
 
 .menu-sparkman {
@@ -337,6 +341,25 @@ come in handy */
   margin-bottom: 1rem;
 }
 
+/* STYLING FOR THE MOBILE MENU */
+.mobile-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.mobile-menu-prompt {
+  font-size: calc(3vw + 1em);
+  color: #cf4929;
+}
+.mobile-menu {
+  font-family: "Lilita One";
+  width: 50vw;
+  background-color: #efebcf;
+}
+
+/* Link to Menu */
 .menu-jpg {
   font-size: calc(0.5vw + 1em);
   color: #cf4929;

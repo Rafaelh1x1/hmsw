@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const menuItems = [
   {
@@ -72,15 +72,6 @@ const menuItems = [
     description: "Wild-caught shrimp, served with cocktail sauce.",
     price: "$18",
     id: "SHRIMP & CHIPS",
-    category: "3",
-  },
-  {
-    name: "SOUTHWEST SALAD",
-    additional: "Choice of fried, blackened, or grilled",
-    description:
-      "Mixed greens, roasted corn, black beans, bell peppers, red onions, tortilla strips, and queso fresco served with chipotle cilantro ranch",
-    price: "SHRIMP $17 | CHICKEN $15",
-    id: "SOUTHWEST SALAD",
     category: "3",
   },
   {
@@ -177,33 +168,74 @@ export default function MenuSection() {
 
   const [menuType, setMenuType] = useState(1);
 
+  const handleChangeMenuType = (event) => {
+    setMenuType(Number(event.target.value)); // Convert value to a number
+  };
+
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 800);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check initial screen width
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div id="menu-section">
       <p className=" menu-heading load">MENU</p>
 
       <div className="menu-sparkman load">
-        <div class="menu-item-flex load">
-          {/* Setting functionality */}
-          <p class="menu-item-type" onClick={() => setMenuType(1)}>
-            SANDWICHES
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(2)}>
-            HALF MOON HEAT
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(3)}>
-            BASKETS & SALADS
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(4)}>
-            SIDES
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(5)}>
-            SWEETS
-          </p>
-          <p class="menu-item-type" onClick={() => setMenuType(6)}>
-            KIDS
-          </p>
-        </div>
-
+        {isMobileView ? (
+          <>
+            <div className="mobile-menu-container">
+              <label htmlFor="menu-type" className="mobile-menu-prompt">
+                Select Menu Section:
+              </label>
+              <select
+                className="mobile-menu"
+                name="menu-type"
+                value={menuType}
+                onChange={handleChangeMenuType}
+              >
+                <option value={1}>SANDWICHES</option>
+                <option value={2}>HALF MOON HEAT</option>
+                <option value={3}>BASKETS</option>
+                <option value={4}>SIDES</option>
+                <option value={5}>SWEETS</option>
+                <option value={6}>KIDS</option>
+              </select>
+            </div>
+          </>
+        ) : (
+          <div class="menu-item-flex load">
+            {/* Setting functionality */}
+            <p class="menu-item-type" onClick={() => setMenuType(1)}>
+              SANDWICHES
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(2)}>
+              HALF MOON HEAT
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(3)}>
+              BASKETS
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(4)}>
+              SIDES
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(5)}>
+              SWEETS
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(6)}>
+              KIDS
+            </p>
+          </div>
+        )}
         {/* conditional rendering to show specific menu item types */}
 
         {menuType === 1 ? (
