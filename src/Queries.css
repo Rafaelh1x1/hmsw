@@ -52,6 +52,19 @@
     border-radius: 5rem;
   }
 
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+    color: #224344;
+    padding: 1rem;
+    width: 70vw;
+    height: auto;
+    text-align: center;
+  }
+
   .best-seller-section {
     display: grid;
     grid-template-columns: 1fr 1fr;

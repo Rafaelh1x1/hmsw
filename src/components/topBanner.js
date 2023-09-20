@@ -118,19 +118,37 @@ function TopBanner(props) {
       )}
 
       <div className="top-banner-img-container">
-        <img
-          src={require("./images/top-banner-img.jpg")}
-          alt="map of half moon bay "
-          width="100%vw"
-          height="auto"
-          className="top-banner-img"
-        />
-        <div className="text-overlay">
+        {isMobileView ? (
           <img
-            src={require("./images/Half-Moon-Rope-Logo.png")}
-            alt="half moon seafood logo "
-            className="text-overlay"
+            src={require("./images/mobile-top-banner-img.jpg")}
+            alt="map of half moon bay "
+            width="100%vw"
+            height="auto"
+            className=""
           />
+        ) : (
+          <img
+            src={require("./images/top-banner-img.jpg")}
+            alt="map of half moon bay "
+            width="100%vw"
+            height="auto"
+            className="top-banner-img"
+          />
+        )}
+        <div className="text-overlay">
+          {isMobileView ? (
+            <img
+              src={require("./images/hm-mobile-logo.png")}
+              alt="half moon seafood logo "
+              className="text-overlay"
+            />
+          ) : (
+            <img
+              src={require("./images/Half-Moon-Rope-Logo.png")}
+              alt="half moon seafood logo "
+              className="text-overlay"
+            />
+          )}
         </div>
       </div>
     </div>
