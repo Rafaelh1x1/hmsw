@@ -125,6 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
   gap: 5rem;
   width: 100vw;
   color: #efebcf;
@@ -428,12 +429,6 @@ come in handy */
 }
 
 /* Stylinf for formatting of the bottom half of the about us section */
-.about-us-description-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
 
 .about-us-description-img {
   margin-left: 1rem;
