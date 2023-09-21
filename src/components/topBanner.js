@@ -86,7 +86,7 @@ function TopBanner(props) {
           </AnchorLink>
           <AnchorLink href="#contact-us-section">
             <p class="quick-nav-text" onClick={handleNavToggle}>
-              CONTACT
+              CONTACT US
             </p>
           </AnchorLink>
         </div>
