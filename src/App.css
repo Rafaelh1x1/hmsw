@@ -43,6 +43,18 @@
   }
 }
 
+/* Animation for the quick nav selection options */
+@keyframes slideColorChange {
+  0% {
+    background-color: #004851; /* Initial color */
+    background-position: -100% 0; /* Start position */
+  }
+  100% {
+    background-color: #efebcf; /* Final color */
+    background-position: 100% 0; /* End position (right) */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +92,7 @@
 /* THIS IS THE TOP HEADER ONLY */
 /* .top-banner-section {
 } */
+
 .top-banner {
   font-size: calc(0.4vw + 1em);
   text-align: center;
@@ -133,6 +146,7 @@
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
 }
+
 .quick-nav-text {
   font-family: "Lilita One";
   font-weight: 500;
@@ -140,7 +154,7 @@
   letter-spacing: 0.1rem;
   cursor: pointer;
   padding-bottom: 0.4rem;
-  width: 100vw;
+
   color: #efebcf;
   text-decoration: underline;
   background-color: #004851;
@@ -148,6 +162,7 @@
 .quick-nav-text:hover {
   color: #497f81;
   background-color: #efebcf;
+  animation: slideColorChange 0.4s ease-in-out;
 }
 #about-us-section {
   text-decoration: none;
@@ -169,7 +184,9 @@
   background-color: #004851;
 }
 .nav-button:hover {
-  background-color: #004851;
+  color: #004851;
+  background-color: #efebcf;
+  animation: slideColorChange 0.4s ease-in-out;
 }
 
 /* THE IMAGE RIGHT UNDER THE TOP HEADER */
@@ -318,7 +335,7 @@ come in handy */
 }
 
 .menu-item-type:hover {
-  color: #99371e;
+  color: #efebcf;
   text-shadow: 0 0 5px #cf4929;
 }
 
