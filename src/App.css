@@ -355,7 +355,8 @@ come in handy */
 }
 .mobile-menu {
   font-family: "Lilita One";
-  width: 50vw;
+  font-size: calc(2vw + 1em);
+  width: 45vw;
   background-color: #efebcf;
 }
 
