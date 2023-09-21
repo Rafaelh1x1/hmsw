@@ -7,7 +7,7 @@ export default function ContactUsSection() {
         <div className="contact-us-banner">
           <img
             src={require("./images/careers-img1.jpg")}
-            alt="Lifeguard station on a beach "
+            alt="Flock of pelicans flying "
             width="100%vw"
             height="auto"
             className="contact-us-banner-img"
@@ -23,7 +23,7 @@ export default function ContactUsSection() {
                 <label for="contact-us-submit"></label>
                 <input
                   type="submit"
-                  value="Click Here To Contact Us"
+                  value="CONTACT US"
                   id="contact-us-submit"
                 ></input>
               </p>
@@ -31,7 +31,8 @@ export default function ContactUsSection() {
           </div>
         </div>
         <p className="contact-us-description-text">
-          Send us a message and we’ll get back to you as soon as possible.
+          Click the button above to send us a message and we’ll get back to you
+          as soon as possible.
         </p>
       </div>
     </div>

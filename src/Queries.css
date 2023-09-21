@@ -19,13 +19,13 @@
   .quick-nav {
     font-family: "Secular One";
     font-weight: 500;
-    font-size: calc(0.2vw + 1em);
+    font-size: calc(3vw + 1em);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    height: 60vh;
+    gap: 2rem;
+    height: 70vh;
     width: 100vw;
     color: #efebcf;
     text-align: center;

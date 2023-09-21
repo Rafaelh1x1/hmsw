@@ -165,7 +165,7 @@ export default function MenuSection() {
   // Didn't use this section because it made it uneven and
   // didn't want to make a list and style and blah blah blah
   const saucesMenuItems = menuItems.filter((item) => item.category === "7");
-
+  // Determines what of the JSX to show
   const [menuType, setMenuType] = useState(1);
 
   const handleChangeMenuType = (event) => {
@@ -173,7 +173,7 @@ export default function MenuSection() {
   };
 
   const [isMobileView, setIsMobileView] = useState(false);
-
+  // Measures if the scrren is mobile
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 800);
@@ -210,6 +210,7 @@ export default function MenuSection() {
                 <option value={4}>SIDES</option>
                 <option value={5}>SWEETS</option>
                 <option value={6}>KIDS</option>
+                <option value={7}>SAUCES</option>
               </select>
             </div>
           </>
@@ -233,6 +234,9 @@ export default function MenuSection() {
             </p>
             <p class="menu-item-type" onClick={() => setMenuType(6)}>
               KIDS
+            </p>
+            <p class="menu-item-type" onClick={() => setMenuType(7)}>
+              SAUCES
             </p>
           </div>
         )}
