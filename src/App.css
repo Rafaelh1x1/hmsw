@@ -382,7 +382,7 @@ come in handy */
 
 /* Link to Menu */
 .menu-jpg {
-  font-size: calc(0.5vw + 1em);
+  font-size: calc(3vw + 1em);
   color: #cf4929;
 }
 .menu-jpg:hover {
