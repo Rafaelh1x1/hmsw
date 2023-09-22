@@ -31,8 +31,7 @@ export default function ContactUsSection() {
           </div>
         </div>
         <p className="contact-us-description-text">
-          Click the button above to send us a message and we’ll get back to you
-          as soon as possible.
+          Click the button above to send us a message
         </p>
       </div>
     </div>
