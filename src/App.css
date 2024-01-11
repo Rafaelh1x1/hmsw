@@ -46,11 +46,11 @@
 /* Animation for the quick nav selection options */
 @keyframes slideColorChange {
   0% {
-    background-color: #004851; /* Initial color */
+    background-color: var(--main_color); /* Initial color */
     background-position: -100% 0; /* Start position */
   }
   100% {
-    background-color: #efebcf; /* Final color */
+    background-color: var(--secondary_color); /* Final color */
     background-position: 100% 0; /* End position (right) */
   }
 }
@@ -60,9 +60,19 @@
   padding: 0;
 }
 
+/* Root selectors to change colors on multiple things */
+:root {
+  --main_color: #046e8f;
+  --secondary_color: #efebcf;
+  --tertiary_color: #183446;
+  --main_font: "Barlow Semi Condensed";
+  /* colors to experiment with for design #38aecc, #efebcf, #183446, #046E8F */
+}
+
 .body {
-  font-family: "Lilita One";
-  background-color: #004851;
+  font-family: "Barlow Semi Condensed";
+  font-weight: 700;
+  background-color: var(--main_color);
   overflow: hidden;
 }
 .hidden {
@@ -79,11 +89,13 @@
 }
 .a {
   text-decoration: none;
+
   background-color: none;
 }
+
 /* THIS IS FOR THE BACKGROUND OF THE SECTIONS MENU THROUGH ABOUT US */
 .background-image {
-  background-image: url("./components/images/background2.0.png");
+  background-color: var(--main_color);
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -98,12 +110,12 @@
   text-align: center;
   vertical-align: middle;
   padding: 0.5rem;
-  color: #efebcf;
+  color: var(--secondary_color);
   margin-top: 0.5rem;
-  background-color: #004851;
-  border-top: 0.5rem #efebcf solid;
-  border-bottom: 0.5rem #efebcf solid;
-  border: 0.5rem #efebcf solid;
+  background-color: var(--main_color);
+  border-top: 0.5rem var(--secondary_color) solid;
+  border-bottom: 0.5rem var(--secondary_color) solid;
+  border: 0.5rem var(--secondary_color) solid;
   text-transform: uppercase;
 }
 
@@ -116,16 +128,45 @@
   width: 3rem;
   height: auto;
   margin-top: 0.5rem;
+  filter: brightness(40%);
 }
 
+/* Styling for the company name */
+.company-name {
+  position: absolute;
+  left: 2.5%;
+  display: flex;
+  gap: none;
+  text-align: left;
+  flex-direction: column;
+  /* font-weight: 900; */
+  font-family: Alfa Slab One;
+  font-size: calc(2vw + 1em);
+  letter-spacing: 0.25rem;
+}
+/* .company-name-big {
+  font-family: var(--main_font);
+  font-size: calc(4vw + 1em);
+}
+.company-name-small {
+  font-family: var(--main_font);
+  font-size: calc(3vw + 1em);
+} */
 /* CSS STYLINF FOR THE LETTERS OVER THE MAIN BANENR IMAGE  */
 .text-overlay {
+  font-size: calc(3vw + 1em);
+  font-family: var(--main_font);
+  text-align: center;
+  vertical-align: center;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: var(--secondary_color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5rem;
-  color: #224344;
+
   padding: 1rem;
   width: 100vw;
   height: auto;
@@ -134,34 +175,36 @@
 
 /* STLYING FOR THE QUICK-NAV BAR */
 .quick-nav {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  text-align: right;
   align-items: center;
-  padding: 0.5rem;
-  gap: 5rem;
-  width: 100vw;
-  color: #efebcf;
-  background-color: #004851;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-right: 1.5rem;
+  gap: 1rem;
+  /* width: 100vw; */
+  color: var(--secondary_color);
+  background-color: var(--main_color);
   z-index: 100000;
   animation: slideDown 0.5s ease-in-out both;
 }
 
 .quick-nav-text {
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   font-weight: 500;
   font-size: calc(0.2vw + 1em);
   letter-spacing: 0.1rem;
   cursor: pointer;
   padding-bottom: 0.4rem;
 
-  color: #efebcf;
+  color: var(--secondary_color);
   text-decoration: underline;
-  background-color: #004851;
 }
 .quick-nav-text:hover {
-  color: #497f81;
-  background-color: #efebcf;
+  color: var(--main_color);
+  background-color: var(--secondary_color);
   animation: slideColorChange 0.4s ease-in-out;
 }
 #about-us-section {
@@ -175,17 +218,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #004851;
+  background-color: var(--main_color);
 }
 .nav-button {
-  color: #efebcf;
+  color: var(--secondary_color);
   width: 100%;
   cursor: pointer;
-  background-color: #004851;
+  background-color: var(--main_color);
 }
 .nav-button:hover {
-  color: #004851;
-  background-color: #efebcf;
+  color: var(--main_color);
+  background-color: var(--secondary_color);
   animation: slideColorChange 0.4s ease-in-out;
 }
 
@@ -202,15 +245,15 @@ come in handy */
 /* Specific styling for the Best sellers subheading */
 .best-sellers-subheading {
   font-size: calc(5vw + 1em);
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   font-weight: 900;
   text-align: center;
   vertical-align: center;
   letter-spacing: 0.5rem;
-  color: #efebcf;
+  color: var(--secondary_color);
   background-color: #67b0b3;
-  border-top: 0.5rem #efebcf solid;
-  border-bottom: 0.5rem #efebcf solid;
+  border-top: 0.5rem var(--secondary_color) solid;
+  border-bottom: 0.5rem var(--secondary_color) solid;
   z-index: 5000;
 }
 
@@ -259,7 +302,7 @@ come in handy */
 /* Styling for name of best selling items */
 .best-sellers-item-name {
   font-size: calc(1vw + 1em);
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   font-weight: 700;
   letter-spacing: 0.2rem;
   position: absolute;
@@ -268,7 +311,7 @@ come in handy */
   transform: translate(-50%, -50%);
   width: 100%;
 
-  color: #efebcf;
+  color: var(--secondary_color);
   background-color: rgba(103, 176, 179, 0.3);
   text-align: center;
 
@@ -279,13 +322,13 @@ come in handy */
 /* Styling for teh description of best selling items */
 .best-sellers-item-description {
   font-size: calc(0.05vw + 1em);
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   font-weight: 500;
-  color: #224344;
+  color: var(--tertiary_color);
 }
 /* Styling for the price of the best selling items */
 .best-sellers-item-price {
-  color: #224344;
+  color: var(--tertiary_color);
   font-size: calc(0.5vw + 1em);
 }
 /* Sets the style for how the data under the menu subheading should look */
@@ -301,17 +344,17 @@ come in handy */
 
 .menu-heading {
   font-size: calc(5vw + 1em);
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   text-align: center;
   vertical-align: center;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1rem;
   margin-bottom: 2rem;
-  color: #efebcf;
-  background-color: #004851;
-  border-top: 0.5rem #efebcf solid;
-  border-bottom: 0.5rem #efebcf solid;
-  border: 0.5rem #efebcf solid;
+  color: var(--secondary_color);
+  background-color: var(--main_color);
+  border-top: 0.5rem var(--secondary_color) solid;
+  border-bottom: 0.5rem var(--secondary_color) solid;
+  border: 0.5rem var(--secondary_color) solid;
 }
 /* STYLING FOR THE GROUP OF WORDS DESCRIBING MENU ITEM TYPES */
 #menu-section {
@@ -328,15 +371,15 @@ come in handy */
 }
 
 .menu-item-type {
-  font-size: calc(0.5vw + 1em);
-  font-weight: 500;
-  color: #cf4929;
+  font-size: calc(1vw + 1em);
+  font-weight: 700;
+  color: var(--tertiary_color);
   text-decoration: underline;
 }
 
 .menu-item-type:hover {
-  color: #efebcf;
-  text-shadow: 0 0 5px #cf4929;
+  color: var(--secondary_color);
+  text-shadow: 0 0 5px var(--tertiary_color);
 }
 
 .menu-sparkman {
@@ -344,20 +387,20 @@ come in handy */
 }
 .menu-item-name {
   font-size: calc(2vw + 1em);
-  color: #cf4929;
+  color: var(--tertiary_color);
   animation: popUp 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
 }
 .menu-item-additional {
   font-size: calc(0.3vw + 1em);
-  color: #002429;
+  color: var(--tertiary_color);
 }
 .menu-item-description {
   font-size: calc(0.5vw + 1em);
-  color: #efebcf;
+  color: var(--secondary_color);
 }
 .menu-item-price {
   font-style: oblique;
-  color: #002429;
+  color: var(--tertiary_color);
   margin-bottom: 1rem;
 }
 
@@ -371,40 +414,40 @@ come in handy */
 }
 .mobile-menu-prompt {
   font-size: calc(3vw + 1em);
-  color: #cf4929;
+  color: var(--tertiary_color);
 }
 .mobile-menu {
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   font-size: calc(2vw + 1em);
   width: 45vw;
-  background-color: #efebcf;
+  background-color: var(--secondary_color);
 }
 
 /* Link to Menu */
 .menu-jpg {
   font-size: calc(3vw + 1em);
-  color: #cf4929;
+  color: var(--tertiary_color);
 }
 .menu-jpg:hover {
-  color: #efebcf;
-  text-shadow: 0 0 19px #cf4929;
+  color: var(--secondary_color);
+  text-shadow: 0 0 19px var(--tertiary_color);
 }
 
 /* Styling for the hours and locations section  */
 .hours-locations-heading {
   font-size: calc(4vw + 1em);
-  font-family: "Lilita One";
+  font-family: var(--main_font);
   text-align: center;
   vertical-align: center;
   font-weight: 600;
   letter-spacing: 0.5rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  color: #efebcf;
-  background-color: #004851;
-  border-top: 0.5rem #efebcf solid;
-  border-bottom: 0.5rem #efebcf solid;
-  border: 0.5rem #efebcf solid;
+  color: var(--secondary_color);
+  background-color: var(--main_color);
+  border-top: 0.5rem var(--secondary_color) solid;
+  border-bottom: 0.5rem var(--secondary_color) solid;
+  border: 0.5rem var(--secondary_color) solid;
 }
 /* THIS SETS THE ORIENTATION OF THE MAPS AND THE INFO IN THE HOURS AND LCOATION SECTION */
 .hours-location-maps-container {
@@ -415,7 +458,7 @@ come in handy */
 }
 
 .hours-locations-map {
-  border: 0.5rem #efebcf solid;
+  border: 0.5rem var(--secondary_color) solid;
   margin-left: 0.5rem;
 }
 /* STYLING FOR JUST THE TEXT */
@@ -432,14 +475,14 @@ come in handy */
   letter-spacing: 0.2rem;
   padding: 0.5rem;
   border: 0.5rem #67b0b3 groove;
-  background-color: #224344;
-  color: #efebcf;
+  background-color: var(--tertiary_color);
+  color: var(--secondary_color);
   margin-bottom: 2rem;
 }
 .sw-info-title {
   font-size: calc(3vw + 1em);
   letter-spacing: 0.2rem;
-  color: #cf4929;
+  color: var(--tertiary_color);
   margin-top: 2rem;
 }
 .sw-info-title:first-child {
@@ -447,13 +490,13 @@ come in handy */
 }
 .sw-info-text {
   font-size: calc(0.5vw + 1em);
-  color: #efebcf;
+  color: var(--secondary_color);
 }
 
 /* Styling so that the address highlights */
 .sw-info-address:hover {
-  color: #224344;
-  text-shadow: 0 0 19px #cf4929;
+  color: var(--tertiary_color);
+  text-shadow: 0 0 19px var(--tertiary_color);
 }
 /* ABOUT US SECTION STYLING */
 .about-us-img {
@@ -465,11 +508,11 @@ come in handy */
 .about-us-heading {
   font-size: calc(5vw + 1em);
   letter-spacing: 0.5rem;
-  color: #efebcf;
-  background-color: #004851;
-  border-top: 0.5rem #efebcf solid;
-  border-bottom: 0.5rem #efebcf solid;
-  border: 0.5rem #efebcf solid;
+  color: var(--secondary_color);
+  background-color: var(--main_color);
+  border-top: 0.5rem var(--secondary_color) solid;
+  border-bottom: 0.5rem var(--secondary_color) solid;
+  border: 0.5rem var(--secondary_color) solid;
 }
 
 /* Stylinf for formatting of the bottom half of the about us section */
@@ -480,7 +523,7 @@ come in handy */
 
 .about-us-description-text {
   font-size: calc(0.1vw + 1em);
-  font-family: "Montserrat";
+  font-family: var(--main_font);
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -491,7 +534,7 @@ come in handy */
   margin-bottom: 3rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  color: #efebcf;
+  color: var(--secondary_color);
 }
 
 /* CONTACT US SECTION  */
@@ -501,19 +544,20 @@ come in handy */
 }
 
 .contact-us-banner-img {
-  border-top: 0.5rem #cf4929 solid;
-  border-bottom: 0.5rem #cf4929 solid;
+  border-top: 0.5rem var(--tertiary_color) solid;
+  border-bottom: 0.5rem var(--tertiary_color) solid;
 }
 
 .contact-us-banner-text {
   font-size: calc(5vw + 1em);
+  font-family: var(--main_font);
   letter-spacing: 0.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.7rem;
-  color: #cf4929;
+  color: var(--tertiary_color);
 
   border-radius: 5rem;
 }
@@ -521,39 +565,39 @@ come in handy */
 .contact-us-description-text {
   font-size: calc(0.6vw + 1em);
   font-weight: 700;
-  font-family: "Montserrat";
+  font-family: var(--main_font);
   margin: 3rem;
   padding: 1rem;
-  color: #cf4929;
+  color: var(--tertiary_color);
   border-radius: 5rem;
-  background-color: #efebcf;
-  border: 0.1rem #cf4929 solid;
+  background-color: var(--secondary_color);
+  border: 0.1rem var(--tertiary_color) solid;
 }
 
 .contact-us-description {
   font-size: calc(1vw + 1em);
-  font-family: "Montserrat";
+  font-family: var(--main_font);
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  color: #efebcf;
+  color: var(--secondary_color);
 }
 
 #contact-us-submit {
   font-size: calc(2vw + 1em);
-  font-family: "Montserrat";
+  font-family: var(--main_font);
   font-weight: 700;
   cursor: pointer;
   padding: 1rem;
   border-radius: 5rem;
-  color: #efebcf;
-  background-color: #004851;
-  border: 0.6rem #cf4929 solid;
+  color: var(--secondary_color);
+  background-color: var(--main_color);
+  border: 0.6rem var(--tertiary_color) solid;
 }
 #contact-us-submit:hover {
-  color: #cf4929;
-  background-color: #efebcf;
+  color: var(--tertiary_color);
+  background-color: var(--secondary_color);
 }
 
 /* Handle section */
@@ -563,14 +607,14 @@ come in handy */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #efebcf;
+  color: var(--secondary_color);
   gap: 0.3rem;
   padding: 0.4rem;
-  border: 0.1rem #cf4929 solid;
+  border: 0.1rem var(--tertiary_color) solid;
 }
 .handle-section:hover {
-  background-color: #cf4929;
-  border: 0.1rem #497f81 solid;
+  background-color: var(--tertiary_color);
+  border: 0.1rem var(--tertiary_color) solid;
 }
 .handle-1 {
   animation: blink 1s infinite;
@@ -597,11 +641,11 @@ come in handy */
 }
 
 .sticky-bar-icon {
-  fill: #cf4929;
+  fill: var(--tertiary_color);
 }
 
 .vertical-line {
   width: 2px;
   height: 100%;
-  background-color: #cf4929;
+  background-color: var(--tertiary_color);
 }

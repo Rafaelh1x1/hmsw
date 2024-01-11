@@ -1,3 +1,12 @@
+/* Root selectors to change colors on multiple things */
+:root {
+  --main_color: #046e8f;
+  --secondary_color: #efebcf;
+  --tertiary_color: #183446;
+  --main_font: "Barlow Semi Condensed";
+  /* colors to experiment with for design #38aecc, #efebcf, #183446, #046E8F */
+}
+
 /* STYLING FOR TEXT IN ABOUT US SECTION */
 @media (min-width: 1400px) {
   .about-us-description-text {
@@ -27,9 +36,9 @@
     gap: 2rem;
     height: 70vh;
     width: 100vw;
-    color: #efebcf;
+    color: var(--secondary_color);
     text-align: center;
-    background-color: #004851;
+    background-color: var(--main_color);
     padding: 5px;
     z-index: 9999;
   }

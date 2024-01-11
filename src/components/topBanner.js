@@ -94,6 +94,10 @@ function TopBanner(props) {
 
       {!isMobileView && (
         <div class="quick-nav">
+          <div className="company-name">
+            <p className="company-name-big">Half Moon</p>
+            <p className="company-name-small">Seafood Co.</p>
+          </div>
           <AnchorLink href="#menu-section">
             <p class="quick-nav-text" onClick={handleNavToggle}>
               MENU
@@ -120,7 +124,7 @@ function TopBanner(props) {
       <div className="top-banner-img-container">
         {isMobileView ? (
           <img
-            src={require("./images/mobile-top-banner-img.jpg")}
+            src={require("./images/food2.jpg")}
             alt="map of half moon bay "
             width="100%vw"
             height="auto"
@@ -128,7 +132,7 @@ function TopBanner(props) {
           />
         ) : (
           <img
-            src={require("./images/top-banner-img.jpg")}
+            src={require("./images/fud2.jpg")}
             alt="map of half moon bay "
             width="100%vw"
             height="auto"
@@ -143,11 +147,7 @@ function TopBanner(props) {
               className="text-overlay"
             />
           ) : (
-            <img
-              src={require("./images/Half-Moon-Rope-Logo.png")}
-              alt="half moon seafood logo "
-              className="text-overlay"
-            />
+            <p className="text-overlay"> HOME OF THE NASHVILLE HOT SANDWICH</p>
           )}
         </div>
       </div>
