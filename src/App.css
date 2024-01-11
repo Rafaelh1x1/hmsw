@@ -130,6 +130,9 @@
   margin-top: 0.5rem;
   filter: brightness(40%);
 }
+.top-banner-img-mobile {
+  filter: brightness(40%);
+}
 
 /* Styling for the company name */
 .company-name {

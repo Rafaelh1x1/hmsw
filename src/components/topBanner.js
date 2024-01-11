@@ -128,7 +128,7 @@ function TopBanner(props) {
             alt="map of half moon bay "
             width="100%vw"
             height="auto"
-            className="top-banner-img"
+            className="top-banner-img-mobile"
           />
         ) : (
           <img
