@@ -144,7 +144,7 @@ function TopBanner(props) {
             <img
               src={require("./images/Main_Logo.png")}
               alt="half moon seafood logo "
-              // className="text-overlay"
+              className="text-overlay"
             />
           ) : (
             <p className="text-overlay"> HOME OF THE NASHVILLE HOT SANDWICH</p>

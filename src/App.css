@@ -178,9 +178,14 @@
   border-radius: 5rem;
 
   padding: 1rem;
-  width: 100vw;
+  width: 80vw;
   height: auto;
   text-align: center;
+}
+
+.top-banner-logo {
+  width: 50vw;
+  height: auto;
 }
 
 /* STLYING FOR THE QUICK-NAV BAR */
