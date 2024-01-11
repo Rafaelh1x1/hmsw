@@ -211,6 +211,6 @@
   #contact-us-submit {
     font-size: calc(0.1vw + 1em);
     padding: 0.5rem;
-    border: 0.3rem #cf4929 solid;
+    border: 0.3rem var(--tertiary_color) solid;
   }
 }
