@@ -95,28 +95,28 @@ function TopBanner(props) {
       {!isMobileView && (
         <div class="quick-nav">
           <div className="company-name">
+            <img
+              src={require("./images/Main_Logo.png")}
+              alt="Half Moon logo"
+              width="125px"
+              height="auto"
+              className="company-name-img"
+            />
             <p className="company-name-big">Half Moon</p>
             <p className="company-name-small">Seafood Co.</p>
           </div>
+
           <AnchorLink href="#menu-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              MENU
-            </p>
+            <p class="quick-nav-text">MENU</p>
           </AnchorLink>
           <AnchorLink href="#hours-locations-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              HOURS & LOCATIONS
-            </p>
+            <p class="quick-nav-text">HOURS & LOCATIONS</p>
           </AnchorLink>
           <AnchorLink href="#about-us-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              ABOUT US
-            </p>
+            <p class="quick-nav-text">ABOUT US</p>
           </AnchorLink>
           <AnchorLink href="#contact-us-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              CONTACT
-            </p>
+            <p class="quick-nav-text">CONTACT</p>
           </AnchorLink>
         </div>
       )}
@@ -142,9 +142,9 @@ function TopBanner(props) {
         <div className="text-overlay">
           {isMobileView ? (
             <img
-              src={require("./images/hm-mobile-logo.png")}
+              src={require("./images/Main_Logo.png")}
               alt="half moon seafood logo "
-              className="text-overlay"
+              // className="text-overlay"
             />
           ) : (
             <p className="text-overlay"> HOME OF THE NASHVILLE HOT SANDWICH</p>

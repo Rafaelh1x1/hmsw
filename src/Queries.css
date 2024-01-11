@@ -7,6 +7,16 @@
   /* colors to experiment with for design #38aecc, #efebcf, #183446, #046E8F */
 }
 
+@media (max-width: 1400px) {
+  .company-name {
+    font-size: calc(3vw + 1em);
+  }
+
+  .company-name-img {
+    width: 10vw;
+  }
+}
+
 /* STYLING FOR TEXT IN ABOUT US SECTION */
 @media (min-width: 1400px) {
   .about-us-description-text {
