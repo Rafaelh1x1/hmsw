@@ -144,7 +144,7 @@
   flex-direction: column;
   /* font-weight: 900; */
   font-family: Alfa Slab One;
-  font-size: calc(2vw + 1em);
+  font-size: calc(1.5vw + 1em);
   letter-spacing: 0.25rem;
 }
 /* .company-name-big {
