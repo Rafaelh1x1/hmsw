@@ -117,7 +117,7 @@ function TopBanner(props) {
         {isMobileView ? (
           <img
             src={require("./images/food2.jpg")}
-            alt="map of half moon bay "
+            alt="fries and hot tossed fish"
             width="100%vw"
             height="auto"
             className="top-banner-img-mobile"
@@ -125,7 +125,7 @@ function TopBanner(props) {
         ) : (
           <img
             src={require("./images/fud2.jpg")}
-            alt="map of half moon bay "
+            alt="food from half moon seafood "
             width="100%vw"
             height="auto"
             className="top-banner-img"
