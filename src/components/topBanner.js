@@ -70,24 +70,16 @@ function TopBanner(props) {
       {isNavOpen && (
         <div class="quick-nav">
           <AnchorLink href="#menu-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              MENU
-            </p>
+            <p class="quick-nav-text">MENU</p>
           </AnchorLink>
           <AnchorLink href="#hours-locations-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              HOURS & LOCATIONS
-            </p>
+            <p class="quick-nav-text">HOURS & LOCATIONS</p>
           </AnchorLink>
           <AnchorLink href="#about-us-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              ABOUT US
-            </p>
+            <p class="quick-nav-text">ABOUT US</p>
           </AnchorLink>
           <AnchorLink href="#contact-us-section">
-            <p class="quick-nav-text" onClick={handleNavToggle}>
-              CONTACT US
-            </p>
+            <p class="quick-nav-text">CONTACT US</p>
           </AnchorLink>
         </div>
       )}

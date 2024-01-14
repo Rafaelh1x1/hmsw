@@ -149,6 +149,7 @@
   font-family: "Archivo Black";
   font-size: calc(1.4vw + 1em);
   letter-spacing: 0.1rem;
+  width: 45vw;
 }
 
 .company-name-img {
