@@ -30,9 +30,6 @@ export default function ContactUsSection() {
             </form>
           </div>
         </div>
-        <p className="contact-us-description-text">
-          Click the button above to send us a message
-        </p>
       </div>
     </div>
   );
